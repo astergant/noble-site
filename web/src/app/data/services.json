@@ -1,0 +1,363 @@
+[
+  {
+    "slug": "ppf-risk-zones",
+    "category": "protection",
+    "flagship": true,
+    "order": 1,
+    "image": "works/porsche-panamera-1",
+    "name": {
+      "ka": "რისკის ზონების დაცვა PPF ფირით",
+      "ru": "Оклейка риск-зон защитной плёнкой",
+      "en": "PPF for high-impact areas"
+    },
+    "short": {
+      "ka": "ბამპერი, ფრთები, ფარები, სარკეები და კაპოტი — ზონები, რომლებიც პირველები იღებენ ქვებს.",
+      "ru": "Бампер, крылья, фары, зеркала и капот — зоны, которые первыми принимают камни и песок.",
+      "en": "Bumper, fenders, headlights, mirrors and bonnet — the areas that take stones and sand first."
+    },
+    "description": {
+      "ka": "ფირი ფარავს ძარის ყველაზე მოწყვლად ნაწილებს. ქარხნული საღებავი ხელუხლებელი რჩება — ნატეხებსა და ნაკაწრებს ფირი იღებს. ფასი დამოკიდებულია მასალასა და ავტომობილის სირთულეზე.",
+      "ru": "Плёнка закрывает самые уязвимые элементы кузова. Заводской лак остаётся нетронутым — сколы и царапины принимает на себя плёнка. Стоимость зависит от материала и сложности автомобиля.",
+      "en": "The film covers the most exposed parts of the body. The factory paint stays untouched while the film takes the chips and scratches. The price depends on the film and the complexity of the car."
+    },
+    "includes": [
+      { "ka": "წინა ბამპერი", "ru": "Передний бампер", "en": "Front bumper" },
+      { "ka": "წინა ფრთები", "ru": "Передние крылья", "en": "Front fenders" },
+      { "ka": "ფარები", "ru": "Фары", "en": "Headlights" },
+      { "ka": "სარკეები", "ru": "Зеркала", "en": "Mirrors" },
+      { "ka": "საქარე მინის დგარები", "ru": "Стойки", "en": "Pillars" },
+      { "ka": "კაპოტი", "ru": "Капот", "en": "Bonnet" },
+      { "ka": "ზოლი სახურავზე", "ru": "Полоса на крыше", "en": "Roof strip" }
+    ],
+    "duration": { "ka": "2 დღიდან", "ru": "от 2 дней", "en": "from 2 days" },
+    "price": {
+      "from": 1300,
+      "currency": "USD",
+      "note": {
+        "ka": "დამოკიდებულია მასალასა და ავტომობილის სირთულეზე",
+        "ru": "Зависит от материала и сложности автомобиля",
+        "en": "Depends on the film and the complexity of the car"
+      }
+    },
+    "warranty": {
+      "ka": "ფირზე 5–10 წელი (მასალის მიხედვით), გადაკვრის სამუშაოებზე 3 წელი",
+      "ru": "На плёнку 5–10 лет (зависит от материала), на работы по оклейке 3 года",
+      "en": "Film: 5–10 years depending on the material. Installation: 3 years"
+    },
+    "materialIds": [],
+    "bundleWith": ["polishing", "ppf-detailing"]
+  },
+  {
+    "slug": "ppf-full",
+    "category": "protection",
+    "flagship": true,
+    "order": 2,
+    "image": "works/bmw-1",
+    "name": {
+      "ka": "ავტომობილის სრული დაფარვა PPF ფირით",
+      "ru": "Полная оклейка автомобиля плёнкой",
+      "en": "Full-body PPF"
+    },
+    "short": {
+      "ka": "მთელი ძარა ფირის ქვეშ: საღებავი დაცულია ნატეხებისგან, ნაკაწრებისგან და რეაგენტებისგან.",
+      "ru": "Весь кузов под плёнкой: лак защищён от сколов, царапин и реагентов.",
+      "en": "The entire body under film: paint protected from chips, scratches and road chemicals."
+    },
+    "description": {
+      "ka": "ფირით იფარება ძარის ყველა შეღებილი ელემენტი. წვრილი დეტალები — ცხაური, ემბლემები — საბაზისო ფასში არ შედის და ცალკე იფარება.",
+      "ru": "Плёнкой закрываются все окрашенные элементы кузова. Мелкие детали — решётка, значки — в базовую стоимость не входят и оклеиваются отдельно.",
+      "en": "Film covers every painted panel. Small parts such as the grille and badges are not included in the base price and are covered separately."
+    },
+    "includes": [
+      { "ka": "ძარის ყველა შეღებილი ელემენტი", "ru": "Все окрашенные элементы кузова", "en": "Every painted body panel" },
+      {
+        "ka": "დეტალიზაციის გარეშე: ცხაური, ემბლემები და ა.შ. — ცალკე",
+        "ru": "Без детализации: решётка, значки и т. п. — отдельно",
+        "en": "Trim detailing (grille, badges, etc.) is a separate service"
+      }
+    ],
+    "duration": { "ka": "4 დღიდან", "ru": "от 4 дней", "en": "from 4 days" },
+    "price": {
+      "from": 3300,
+      "currency": "USD",
+      "note": {
+        "ka": "დეტალიზაციის გარეშე (ცხაური, ემბლემები და ა.შ.)",
+        "ru": "Без детализации (решётка, значки и т. п.)",
+        "en": "Trim detailing (grille, badges, etc.) not included"
+      }
+    },
+    "warranty": {
+      "ka": "ფირზე 5–10 წელი (მასალის მიხედვით), გადაკვრის სამუშაოებზე 3 წელი",
+      "ru": "На плёнку 5–10 лет (зависит от материала), на работы по оклейке 3 года",
+      "en": "Film: 5–10 years depending on the material. Installation: 3 years"
+    },
+    "materialIds": [],
+    "bundleWith": ["ppf-detailing", "polishing", "soundproofing-full"]
+  },
+  {
+    "slug": "ppf-detailing",
+    "category": "protection",
+    "order": 3,
+    "image": "works/lexus-nx-1",
+    "name": {
+      "ka": "დეტალიზაცია გადაკვრისას",
+      "ru": "Детализация при оклейке",
+      "en": "PPF trim detailing"
+    },
+    "short": {
+      "ka": "ფირი შეუღებავ მბზინავ ელემენტებზე: ცხაურზე, მოლდინგებზე, ემბლემებზე.",
+      "ru": "Плёнка на неокрашенные глянцевые элементы: решётку, молдинги, значки.",
+      "en": "Film on unpainted gloss parts: grille, mouldings, badges."
+    },
+    "description": {
+      "ka": "მბზინავი პლასტმასი საღებავზე სწრაფად იკაწრება. ვფარავთ ყველა შეუღებავ მბზინავ ელემენტს, ფასი დამოკიდებულია მათ რაოდენობაზე.",
+      "ru": "Глянцевый пластик царапается быстрее лака. Оклеиваем все неокрашенные глянцевые элементы, цена зависит от их количества.",
+      "en": "Gloss plastic scratches faster than paint. We cover every unpainted gloss part; the price depends on how many there are."
+    },
+    "includes": [
+      {
+        "ka": "ავტომობილის ყველა შეუღებავი მბზინავი ელემენტი",
+        "ru": "Все неокрашенные глянцевые элементы автомобиля",
+        "en": "Every unpainted gloss part of the car"
+      }
+    ],
+    "duration": { "ka": "+1 დღე გადაკვრასთან ერთად", "ru": "+1 день к оклейке", "en": "+1 day to the wrap" },
+    "price": {
+      "from": 500,
+      "currency": "USD",
+      "note": {
+        "ka": "დამოკიდებულია ელემენტების რაოდენობაზე",
+        "ru": "Зависит от количества элементов",
+        "en": "Depends on the number of parts"
+      }
+    },
+    "bundleWith": ["ppf-full", "ppf-risk-zones"]
+  },
+  {
+    "slug": "polishing",
+    "category": "body",
+    "order": 4,
+    "image": "hero/reflection",
+    "name": { "ka": "ძარის პოლირება", "ru": "Полировка кузова", "en": "Paint polishing" },
+    "short": {
+      "ka": "ვასწორებთ საღებავის საფარს: ლაქის გახურებით ნაკაწრები იკვრება და ილუქება.",
+      "ru": "Исправляем лакокрасочное покрытие: нагревом лака затягиваем и запаиваем царапины.",
+      "en": "Paint correction: heating the clear coat closes and seals scratches."
+    },
+    "description": {
+      "ka": "საღებავის საფარის კორექცია ლაქის გახურების მეთოდით — ნაკაწრები იკვრება და ილუქება. სხვადასხვა მარკის ლაქი განსხვავებულია, ამიტომ ვადა და ფასი დამოკიდებულია სირთულესა და ავტომობილის მარკაზე.",
+      "ru": "Исправление лакокрасочного покрытия методом нагревания лака — царапины затягиваются и запаиваются. Лак у разных марок разный, поэтому срок и цена зависят от сложности и марки автомобиля.",
+      "en": "Paint correction by heating the clear coat so that scratches close up and seal. Clear coats differ between brands, so time and price depend on the job and the make of the car."
+    },
+    "includes": [
+      { "ka": "საღებავის საფარის კორექცია", "ru": "Исправление лакокрасочного покрытия", "en": "Paint correction" },
+      {
+        "ka": "ნაკაწრების შეკვრა და დალუქვა ლაქის გახურებით",
+        "ru": "Затягивание и запаивание царапин нагревом лака",
+        "en": "Scratches closed and sealed by heating the clear coat"
+      }
+    ],
+    "duration": { "ka": "2–3 დღე", "ru": "2–3 дня", "en": "2–3 days" },
+    "price": {
+      "from": 700,
+      "currency": "GEL",
+      "variants": [
+        { "key": "sedan", "from": 700 },
+        { "key": "crossover", "from": 900 },
+        { "key": "suv", "from": 1100 }
+      ],
+      "note": {
+        "ka": "დამოკიდებულია სირთულესა და მარკაზე (განსხვავებული ლაქი)",
+        "ru": "Зависит от сложности и марки (разный лак)",
+        "en": "Depends on the car and its clear coat"
+      }
+    },
+    "bundleWith": ["ppf-risk-zones", "interior-cleaning"]
+  },
+  {
+    "slug": "interior-cleaning",
+    "category": "interior",
+    "order": 5,
+    "image": "works/mercedes-amg-interior-1",
+    "name": { "ka": "სალონის ქიმწმენდა", "ru": "Химчистка салона", "en": "Interior deep cleaning" },
+    "short": {
+      "ka": "სავარძლების მოხსნით: ვწმენდთ იმას, რასაც მტვერსასრუტი ვერ წვდება.",
+      "ru": "С демонтажем сидений: чистим то, до чего не добраться пылесосом.",
+      "en": "With the seats removed: we clean what a vacuum can’t reach."
+    },
+    "description": {
+      "ka": "ვხსნით მძღოლისა და მგზავრის სავარძლებს და უკანა დივანს. ხალიჩას ვამუშავებთ სპეციალური ქიმიით და ექსტრაქტორით. სავარძლებს — მასალის მიხედვით: ქსოვილს ქიმიით და ექსტრაქტორით, ტყავს რბილი ქიმიით და რბილი ჯაგრისებით.",
+      "ru": "Демонтируем водительское и пассажирское сиденья и задний диван. Ковёр обрабатываем специальной химией с вытяжным пылесосом. Сиденья — в зависимости от материала: ткань химией и вытяжным пылесосом, кожу щадящей химией и мягкими щётками.",
+      "en": "We remove the driver and passenger seats and the rear bench. The carpet is treated with a dedicated cleaner and an extraction vacuum. Seats are cleaned according to their material: fabric with cleaner and extraction, leather with a gentle cleaner and soft brushes."
+    },
+    "includes": [
+      {
+        "ka": "მძღოლისა და მგზავრის სავარძლების და უკანა დივნის დემონტაჟი",
+        "ru": "Демонтаж водительского и пассажирского сидений и заднего дивана",
+        "en": "Driver and passenger seats and rear bench removed"
+      },
+      {
+        "ka": "ხალიჩა — სპეციალური ქიმია და ექსტრაქტორი",
+        "ru": "Ковёр — специальная химия и вытяжной пылесос",
+        "en": "Carpet — dedicated cleaner and extraction vacuum"
+      },
+      { "ka": "ქსოვილი — ქიმია და ექსტრაქტორი", "ru": "Ткань — химия и вытяжной пылесос", "en": "Fabric — cleaner and extraction vacuum" },
+      { "ka": "ტყავი — რბილი ქიმია და რბილი ჯაგრისები", "ru": "Кожа — щадящая химия и мягкие щётки", "en": "Leather — gentle cleaner and soft brushes" }
+    ],
+    "duration": { "ka": "1–2 დღე", "ru": "1–2 дня", "en": "1–2 days" },
+    "price": {
+      "from": 500,
+      "currency": "GEL",
+      "variants": [
+        { "key": "sedan", "from": 500 },
+        { "key": "crossover", "from": 550 },
+        { "key": "suv", "from": 600 }
+      ]
+    },
+    "bundleWith": ["polishing"]
+  },
+  {
+    "slug": "express-cleaning",
+    "category": "interior",
+    "order": 6,
+    "image": "",
+    "name": { "ka": "ექსპრეს ქიმწმენდა", "ru": "Экспресс-химчистка", "en": "Express interior cleaning" },
+    "short": {
+      "ka": "სწრაფი ქიმწმენდა სავარძლების მოხსნის გარეშე — ერთ დღეში.",
+      "ru": "Быстрая химчистка без снятия сидений — за один день.",
+      "en": "A quick interior clean without removing the seats — in one day."
+    },
+    "description": {
+      "ka": "ქიმწმენდა სავარძლების მოხსნის გარეშე. შესაფერისია რეგულარული მოვლისთვის, როცა სალონს ღრმა წმენდა არ სჭირდება.",
+      "ru": "Химчистка без снятия сидений. Подходит для регулярного ухода, когда салону не нужна глубокая чистка.",
+      "en": "Interior cleaning without removing the seats. Good for regular care when the interior does not need a deep clean."
+    },
+    "includes": [
+      { "ka": "ქიმწმენდა სავარძლების მოხსნის გარეშე", "ru": "Химчистка без снятия сидений", "en": "Cleaning without removing the seats" }
+    ],
+    "duration": { "ka": "1 დღე", "ru": "1 день", "en": "1 day" },
+    "price": {
+      "from": 300,
+      "currency": "GEL",
+      "variants": [
+        { "key": "sedan", "from": 300 },
+        { "key": "suv", "from": 350 }
+      ],
+      "todo": "Brief says '300 GEL sedan, 350 GEL (jeep, sedan)': confirm which class costs 350"
+    }
+  },
+  {
+    "slug": "soundproofing-full",
+    "category": "sound",
+    "order": 7,
+    "image": "",
+    "name": {
+      "ka": "ავტომობილის სრული ხმის იზოლაცია",
+      "ru": "Шумоизоляция всего автомобиля",
+      "en": "Full-car soundproofing"
+    },
+    "short": {
+      "ka": "ვიბრო და ხმის იზოლაცია: მშვიდი სალონი ქალაქშიც და ტრასაზეც.",
+      "ru": "Вибро- и шумоизоляция: тише в салоне и в городе, и на трассе.",
+      "en": "Vibration and noise insulation: a quieter cabin in town and on the highway."
+    },
+    "description": {
+      "ka": "მთელი ავტომობილის ვიბრო და ხმის იზოლაცია. თაღების დამუშავება ცალკე ფასდება. Defender-ისა და G-Class-ისთვის ფასი სხვაა.",
+      "ru": "Вибро- и шумоизоляция всего автомобиля. Обработка арок оплачивается отдельно. Для Defender и G-Class своя стоимость.",
+      "en": "Vibration and noise insulation for the whole car. Wheel arches are priced separately. Defender and G-Class have their own price."
+    },
+    "includes": [
+      { "ka": "მთელი ავტომობილის ვიბრო და ხმის იზოლაცია", "ru": "Вибро- и шумоизоляция всего автомобиля", "en": "Vibration and noise insulation of the whole car" },
+      { "ka": "თაღები — სურვილისამებრ, დამატებითი ღირებულებით", "ru": "Арки — по желанию, за доплату", "en": "Wheel arches — optional, at extra cost" }
+    ],
+    "duration": { "ka": "4–5 დღე", "ru": "4–5 дней", "en": "4–5 days" },
+    "price": {
+      "from": 3100,
+      "currency": "GEL",
+      "variants": [
+        { "key": "standard", "from": 3100, "withArchesFrom": 3800 },
+        { "key": "defender_gclass", "from": 3800, "withArchesFrom": 4500 }
+      ]
+    },
+    "bundleWith": ["ppf-full"]
+  },
+  {
+    "slug": "soundproofing-doors",
+    "category": "sound",
+    "order": 8,
+    "image": "",
+    "name": { "ka": "კარების ხმის იზოლაცია", "ru": "Шумоизоляция дверей", "en": "Door soundproofing" },
+    "short": {
+      "ka": "ნაკლები ქუჩის ხმაური და აუდიოსისტემის სუფთა ჟღერადობა.",
+      "ru": "Меньше шума с улицы и чище звук аудиосистемы.",
+      "en": "Less street noise and cleaner audio."
+    },
+    "description": {
+      "ka": "კარების ვიბრო და ხმის იზოლაცია — ყველაზე სწრაფი გზა სალონის სიმშვიდისკენ.",
+      "ru": "Вибро- и шумоизоляция дверей — самый быстрый способ сделать салон тише.",
+      "en": "Door vibration and noise insulation — the quickest way to a quieter cabin."
+    },
+    "includes": [
+      { "ka": "ოთხივე კარის ვიბრო და ხმის იზოლაცია", "ru": "Вибро- и шумоизоляция четырёх дверей", "en": "Vibration and noise insulation of all four doors" }
+    ],
+    "duration": { "ka": "2 დღე", "ru": "2 дня", "en": "2 days" },
+    "price": { "from": 1000, "currency": "GEL" },
+    "bundleWith": ["soundproofing-arches"]
+  },
+  {
+    "slug": "soundproofing-arches",
+    "category": "sound",
+    "order": 9,
+    "image": "",
+    "name": { "ka": "თაღების ხმის იზოლაცია", "ru": "Шумоизоляция арок", "en": "Wheel arch soundproofing" },
+    "short": {
+      "ka": "ახშობს საბურავებისა და ქვების ხმაურს.",
+      "ru": "Глушит шум шин и камней из-под колёс.",
+      "en": "Dampens tyre and gravel noise."
+    },
+    "description": {
+      "ka": "თაღების დამუშავება ამცირებს ხმაურს, რომელიც ბორბლებიდან სალონში აღწევს.",
+      "ru": "Обработка арок снижает шум, который идёт в салон от колёс.",
+      "en": "Treating the wheel arches reduces the noise travelling into the cabin from the wheels."
+    },
+    "includes": [
+      { "ka": "ოთხივე თაღის ხმის იზოლაცია", "ru": "Шумоизоляция четырёх арок", "en": "Insulation of all four wheel arches" }
+    ],
+    "duration": { "ka": "2 დღე", "ru": "2 дня", "en": "2 days" },
+    "price": { "from": 1000, "currency": "GEL" },
+    "bundleWith": ["soundproofing-doors"]
+  },
+  {
+    "slug": "wheel-painting",
+    "category": "wheels",
+    "order": 10,
+    "image": "",
+    "name": { "ka": "დისკების შეღებვა", "ru": "Покраска дисков", "en": "Wheel refinishing" },
+    "short": {
+      "ka": "ვაშორებთ ძველ საფარს, ვაყენებთ ახალს და ვაშრობთ ღუმელში.",
+      "ru": "Снимаем старое покрытие, наносим новое и запекаем в печи.",
+      "en": "Old coating stripped, new one applied and oven-cured."
+    },
+    "description": {
+      "ka": "ვაშორებთ ძველ საფარს და ვაყენებთ ახალს ღუმელში. ფასი დამოკიდებულია დისკის რადიუსსა და მდგომარეობაზე. გასწორება ცალკე ფასდება (მაგალითად, ფრეზა — 100 ₾).",
+      "ru": "Снимаем старое покрытие и наносим новое в печи. Цена зависит от радиуса и состояния диска. Рихтовка оплачивается отдельно (например, фреза — 100 ₾).",
+      "en": "We strip the old coating and apply a new one, cured in an oven. The price depends on wheel size and condition. Straightening is charged separately (for example, milling — 100 ₾)."
+    },
+    "includes": [
+      { "ka": "ძველი საფარის მოცილება", "ru": "Снятие старого покрытия", "en": "Stripping the old coating" },
+      { "ka": "ახალი საფარის დატანა ღუმელში", "ru": "Нанесение нового покрытия в печи", "en": "New coating applied and oven-cured" },
+      { "ka": "გასწორება — ცალკე", "ru": "Рихтовка — отдельно", "en": "Straightening — charged separately" }
+    ],
+    "duration": { "ka": "2 დღე", "ru": "2 дня", "en": "2 days" },
+    "price": {
+      "from": 1100,
+      "currency": "GEL",
+      "note": {
+        "ka": "დამოკიდებულია რადიუსსა და მდგომარეობაზე",
+        "ru": "Зависит от радиуса и состояния",
+        "en": "Depends on wheel size and condition"
+      },
+      "todo": "Confirm whether 1100 GEL is per set or per wheel, and what 'фреза — 100 ₾' covers (per wheel?)"
+    }
+  }
+]

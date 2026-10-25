@@ -1,0 +1,262 @@
+{
+  "hero/reflection": {
+    "source": "photo/IMG_0300.JPG",
+    "focal": "55% 40%",
+    "alt": {
+      "ka": "ავტომობილის კაპოტი სტუდიის განათების ანარეკლებით",
+      "ru": "Капот автомобиля с отражением студийного света",
+      "en": "Car bonnet reflecting the studio lights"
+    },
+    "width": 4284,
+    "height": 5712,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoSABgAPu1srlIppaQiqAgBMB2JZwDCgA5UXvXWLDDUSRUv4Y+AAAD9jGpeWyGC6lRUclbkdRupM/aXmXi1Iz7dL/Y8wSpjesmF52H5uUHctttddsvNoslE+x49osR+Q7UIcptZGTC5IJ8FLIQtFVqNweoXp7ykoMIk14mzOqitveE+6sTn4i86tJml2kTlAIIvGBTzhPANJXlSwAA="
+  },
+  "works/porsche-panamera-1": {
+    "source": "photo/IMG_5666.JPG",
+    "focal": "45% 60%",
+    "alt": {
+      "ka": "Porsche Panamera სტუდიაში სამუშაოს შემდეგ",
+      "ru": "Porsche Panamera в студии после работы",
+      "en": "Porsche Panamera in the studio after the job"
+    },
+    "width": 3024,
+    "height": 4032,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBQCdASoSABgAPu1ur1IppiQiqAgBMB2JaQDPoAyV67e6lmiZb8JbWEmCK+GXfW0AAP7l8TTlFZwJWMID2YBY63Cq621ffkzIeDj4QJjMPblwzZHk7/ijlqROye7dTOyOAB34RrPKb7+zKyS0iD42AXjAGPhUcbJ/tKYu6jk966ScsOYsXeN5LYt0YiqMYq91fkW2IAAAAA=="
+  },
+  "works/lexus-nx-1": {
+    "source": "photo/photo_2026-10-04_11-54-02.jpg",
+    "focal": "50% 55%",
+    "alt": {
+      "ka": "Lexus NX-ის წინა ნაწილი სტუდიის განათების ანარეკლებით",
+      "ru": "Передняя часть Lexus NX с отражением студийного света",
+      "en": "Front of a Lexus NX reflecting the studio lights"
+    },
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      480,
+      800,
+      960
+    ],
+    "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAwBQCdASoSABgAPu1urlIppiQiqAgBMB2JZwALAAFlQ1LiSUr6N346p+cnaybVU0q94AD7nOfnP0uzIDwSLI85Cw4JkIVrjUThNat2j98OZuGZr87v4YZ0VMbMiEEs8O3JyI5pvNMvVaxOwYd5Pe1AgyOSt3sTgBXwAzO10G/RKC3kW7M8ffNg/myQtt0ZydouWN6eK80Qr6xDjdB2kFBOI5eWM6fTA4AgwJ7lJaJBnuQAAAA="
+  },
+  "works/lexus-nx-2": {
+    "source": "photo/photo_2026-10-04_11-54-02 (2).jpg",
+    "focal": "55% 50%",
+    "alt": {
+      "ka": "Lexus NX-ის უკანა ნაწილი სამუშაოს შემდეგ",
+      "ru": "Задняя часть Lexus NX после работы",
+      "en": "Rear of a Lexus NX after the job"
+    },
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      480,
+      800,
+      960
+    ],
+    "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAADwBACdASoSABgAPu1ur1IppiQiqAgBMB2JZwDJEA3WLfuGl0NIT2/GUnxekP3/awAA9FtnyD0Ze8QDF7S9rZmiCjVPsOym5//45zeoReBgwyj84Ll+TP9d2Jau7SRWSq4SVHi+A9fwahMwmIum7gnjd0GROA2cTyriB2LqdiDcI65ZDuxigUnIE7/QiY5mOSmeOMPKOOcimxj+6ZYEb5nizXUSns0a6gIiSeyJpn44nIvfBWIAAA=="
+  },
+  "works/bmw-1": {
+    "source": "photo/photo_2026-10-04_11-52-41.jpg",
+    "focal": "50% 60%",
+    "alt": {
+      "ka": "BMW Noble Detailing-ის სტუდიაში",
+      "ru": "BMW в студии Noble Detailing",
+      "en": "BMW in the Noble Detailing studio"
+    },
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      480,
+      800,
+      960
+    ],
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACQBACdASoSABgAPu1or1CppaQiqAqpMB2JZwDKABGPUNXTaYdmtb2eukqADQAA/uld87syjusryh7HpjDPPxnbg8kC3Rn1hEE/6QuN29eWzyYx41nfZPiV3W6KueuoHc8B6hzmgel9so98oviIrmc+yDQcRdUG/LyFVAAA"
+  },
+  "works/mercedes-amg-interior-1": {
+    "source": "photo/IMG_5210.JPG",
+    "focal": "50% 50%",
+    "alt": {
+      "ka": "Mercedes-AMG-ის სალონი ქიმწმენდის შემდეგ",
+      "ru": "Салон Mercedes-AMG после химчистки",
+      "en": "Mercedes-AMG interior after deep cleaning"
+    },
+    "width": 6048,
+    "height": 8064,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBACdASoSABgAPu1ur1IppiQiqAgBMB2JaQAAKwozslVgl3UGWUZudgAA/uza1vkTBbk4MpsrkMG4HIjTo2kSmP3zeDNIWAjvAdjpx6A9mEgRd/bwz0PPjeAPQ9xYbxPtbX5LiGqgxmuyz/R1L+SSttCxuQiT2wb3AQ5gPB4C7fy0aycNgAAA"
+  },
+  "studio/hall": {
+    "source": "photo/photoDet/IMG_3934.HEIC",
+    "focal": "50% 50%",
+    "alt": {
+      "ka": "Noble Detailing-ის სტუდიის დარბაზი განათების ჭერით",
+      "ru": "Зал студии Noble Detailing со световым потолком",
+      "en": "Noble Detailing studio hall with a light ceiling"
+    },
+    "width": 5712,
+    "height": 4284,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADwBACdASoYABIAPu1mp02ppaMiMBgMATAdiWcAygAPNsxaUFSIXrY7wKnNcEE71mAA/ngi+6u+0tuwNdvmBTBl8cQck7qeXDCAAitMpRNet3tYXpRlYT9qIfkusHEqr30anDj4JXk+zzfrEgq7cIPHlq4k2nvgYAA="
+  },
+  "studio/logo-wall": {
+    "source": "photo/photoDet/IMG_3936.HEIC",
+    "focal": "50% 45%",
+    "alt": {
+      "ka": "კედელი Noble-ის ლოგოთი სტუდიაში",
+      "ru": "Стена с логотипом Noble в студии",
+      "en": "Wall with the Noble logo in the studio"
+    },
+    "width": 3024,
+    "height": 4032,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACQBACdASoSABgAPu1srFEppaQiqAqpMB2JZQDH5A0Ewe3nzueMl71HPolKIUAA8daRjnPnTtttSK5kJij+WhQ06QNuWlCE+SwBZTVAK6Fvfx44us6f8LZqZ86RA17bSw6ratmOmgnIL3skoIErIAAA"
+  },
+  "studio/glass-bays": {
+    "source": "photo/photoDet/IMG_3940.HEIC",
+    "focal": "50% 55%",
+    "alt": {
+      "ka": "მინის ტიხრებით გამოყოფილი სამუშაო ბოქსები",
+      "ru": "Рабочие боксы за стеклянными перегородками",
+      "en": "Work bays behind glass partitions"
+    },
+    "width": 4284,
+    "height": 5712,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBQCdASoSABgAPu1ur1IppiQiqAgBMB2JZwDDNA9bOLY+XHnJO4Fb/XZJLmAOTvAAAP7ZlBNa0TN6TY6EbYb2air7m5H6D9qcFu+9c9P1aMeyJ3NTiJDbgFICq/4ZoHKdeHpe/xn5rn3NaFJ4qmlhH/UMiAVX4bGt+8y3u/q3uWvGpSAa+D0L1mgwVkcRgl9KKW8gAAA="
+  },
+  "studio/hall-perspective": {
+    "source": "photo/photoDet/IMG_3943.HEIC",
+    "focal": "50% 50%",
+    "alt": {
+      "ka": "სტუდიის დარბაზი სიღრმეში",
+      "ru": "Зал студии в перспективе",
+      "en": "Studio hall in perspective"
+    },
+    "width": 4284,
+    "height": 5712,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADQBACdASoSABgAPu1ur1IppiQiqAgBMB2JZQDA3AuqIZN+wyM5/QetligQkzxGAAD+qHd/j1r4x6JUy60DSNxUZ0zeJvFpVtVaCiXkswPbV+OCjqP2dd9/bGiNcg+gbRpIs9tqws4jqjotndSEnb5w0fcqK9595C9l3lNuP8BzAIvZY9Y4Ca7tYe0UuwhjkMuIRGR+ZLrpqJDaPdAAAA=="
+  },
+  "studio/bay": {
+    "source": "photo/photoDet/IMG_3944.HEIC",
+    "focal": "50% 55%",
+    "alt": {
+      "ka": "სამუშაო ბოქსი ხაზოვანი განათებით",
+      "ru": "Рабочий бокс с линейным светом",
+      "en": "Work bay with linear lighting"
+    },
+    "width": 5712,
+    "height": 4284,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQBACdASoYABIAPu1mqE2ppiOiMBgMATAdiWcAxNgRBIjQDHg9hvnifeovaZDAAAD9rtUhUORAkR5WUUdgS8hLqdtabTlrWO9BHuObqu6eYhKb1pmi3hZEXHD3iXZ68j7XKJpZyyfuaBBhoEToEjF8HeFE5LK4lrMZAAAA"
+  },
+  "studio/office": {
+    "source": "photo/photoDet/IMG_3945.HEIC",
+    "focal": "55% 55%",
+    "alt": {
+      "ka": "მენეჯერის სამუშაო ადგილი და კლიენტების მისაღები",
+      "ru": "Рабочее место менеджера и зона приёма клиентов",
+      "en": "Manager’s desk and client reception"
+    },
+    "width": 5712,
+    "height": 4284,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBQCdASoYABIAPu1qrlCppaQiqAqpMB2JQBfNJ3ArSLnJ6/9VhFWJd4Uq6bHfOqwAAP545VOJ6ONRsepbl4+fOi0UDmfysXdTLZ+GFID+SGrURHarTGDGZn2KkD+PYeYaN4mII87AlZIMVvuk2MDzAXIukNGEeli7g2Sl2YGlu5ydPURSYC8bJ0JUDLAc66IqPB8gYaqx5/lDSw0gAA=="
+  },
+  "studio/lounge": {
+    "source": "photo/photoDet/IMG_3948.HEIC",
+    "focal": "40% 60%",
+    "alt": {
+      "ka": "კლიენტების მოსაცდელი ზონა ტყავის დივნით",
+      "ru": "Зона ожидания для клиентов с кожаным диваном",
+      "en": "Client lounge with a leather sofa"
+    },
+    "width": 5712,
+    "height": 4284,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBQCdASoYABIAPu1qrVCppaQiqAqpMB2JQBhQAbumtEEyXKQOrsQWaJyjBHUEdwhygAD0d7N8mUUlfRblu21KSWJGtTpZoPsNtkYAHkIeotHurFtNgNwKZS/haH/4AuuRMKGcbeTLi8ldpr/cu0Mbr4ZMAieJB+FswQQkc2gjnBpoxEvfZeAw9CMY/e1ZeL0IAA=="
+  },
+  "studio/wash-bay": {
+    "source": "photo/photoDet/IMG_3953.HEIC",
+    "focal": "50% 55%",
+    "alt": {
+      "ka": "სარეცხი ბოქსი სტუდიის შესასვლელთან",
+      "ru": "Моечный бокс у въезда в студию",
+      "en": "Wash bay at the studio entrance"
+    },
+    "width": 4284,
+    "height": 5712,
+    "widths": [
+      480,
+      800,
+      1200,
+      1600,
+      2000
+    ],
+    "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASoSABgAPu1ur1IppiQiqAgBMB2JZwAAKaQ4D0LaZCR64zXZvxJN+3aUAAD+6dME+/eVflnGo8Ue6OUNEEz41C/mf8/uQ5stH3jdxboxEwr/E423eyhq/wDy4OlodYop/BghHvfLhmvmar1XkaJgooRXPFwFezqTc4+FOL2ecnRUhjecDGugAAAA"
+  }
+}

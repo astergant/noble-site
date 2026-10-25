@@ -1,0 +1,158 @@
+<!-- Blur lives on a sibling layer: backdrop-filter on the host would trap the fixed menu inside the header box. -->
+<div class="absolute inset-0 -z-10 bg-night/95 backdrop-blur-md" aria-hidden="true"></div>
+<div class="container-page flex h-header items-center justify-between gap-4">
+  <a [routerLink]="langs.link('/')" class="-m-2 shrink-0 p-2" aria-label="Noble Detailing">
+    <img
+      ngSrc="/brand/logo-horizontal-sand.webp"
+      width="400"
+      height="130"
+      priority
+      alt="Noble Detailing"
+      class="h-9 w-auto md:h-10"
+    />
+  </a>
+
+  <nav class="hidden xl:block" [attr.aria-label]="'nav.main' | transloco">
+    <ul class="flex items-center gap-7">
+      @for (item of nav; track item.path) {
+        <li>
+          <a
+            [routerLink]="langs.link(item.path)"
+            routerLinkActive="is-active"
+            ariaCurrentWhenActive="page"
+            class="nav-link relative py-2 text-[0.9375rem] text-white/80 transition-colors hover:text-white [&.is-active]:text-sand"
+          >
+            {{ item.key | transloco }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <div class="flex items-center gap-1 md:gap-2">
+    <app-lang-switcher class="hidden md:block" />
+
+    @if (contact.whatsapp) {
+      <a
+        [href]="contact.whatsapp"
+        target="_blank"
+        rel="noopener"
+        (click)="contact.track('whatsapp', 'header')"
+        class="hidden size-11 items-center justify-center rounded-full border border-line-dark text-white/85 transition-colors hover:border-sand hover:text-sand md:inline-flex"
+        [attr.aria-label]="'contact.whatsappAria' | transloco"
+      >
+        <app-icon name="whatsapp" [size]="18" />
+      </a>
+    }
+
+    <a
+      [href]="contact.tel"
+      (click)="contact.track('call', 'header')"
+      class="inline-flex h-11 items-center gap-2 rounded-full bg-sand px-3.5 font-display font-semibold text-night-950 transition-[background-color,transform] hover:bg-sand-300 active:scale-[0.98] md:px-5"
+      [attr.aria-label]="'contact.callAria' | transloco: { phone: contact.site.phoneDisplay }"
+    >
+      <app-icon name="phone" [size]="18" />
+      <span class="hidden md:inline">{{ 'common.call' | transloco }}</span>
+    </a>
+
+    <button
+      #burger
+      type="button"
+      class="inline-flex size-11 items-center justify-center rounded-full text-white transition-colors hover:text-sand xl:hidden"
+      [attr.aria-expanded]="open()"
+      aria-controls="mobile-menu"
+      [attr.aria-label]="'common.openMenu' | transloco"
+      (click)="toggle()"
+    >
+      <app-icon name="menu" [size]="24" />
+    </button>
+  </div>
+</div>
+
+@if (open()) {
+  <div
+    #panel
+    id="mobile-menu"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="'common.menu' | transloco"
+    class="on-dark fixed inset-0 z-50 flex flex-col overflow-y-auto bg-night-950 text-white"
+    animate.enter="menu-enter"
+    animate.leave="menu-leave"
+    (keydown)="trapFocus($event)"
+  >
+    <div class="container-page flex h-header shrink-0 items-center justify-between">
+      <a [routerLink]="langs.link('/')" class="-m-2 p-2" aria-label="Noble Detailing">
+        <img ngSrc="/brand/logo-horizontal-sand.webp" width="400" height="130" alt="" class="h-9 w-auto" />
+      </a>
+      <button
+        #closeBtn
+        type="button"
+        class="inline-flex size-11 items-center justify-center rounded-full text-white transition-colors hover:text-sand"
+        [attr.aria-label]="'common.closeMenu' | transloco"
+        (click)="close()"
+      >
+        <app-icon name="x" [size]="26" />
+      </button>
+    </div>
+
+    <nav class="container-page flex-1 py-8" [attr.aria-label]="'nav.main' | transloco">
+      <ul class="flex flex-col">
+        @for (item of nav; track item.path; let i = $index) {
+          <li class="menu-item border-b border-line-dark" [style.--i]="i">
+            <a
+              [routerLink]="langs.link(item.path)"
+              routerLinkActive="is-active"
+              ariaCurrentWhenActive="page"
+              class="flex items-baseline gap-4 py-4 font-display text-[clamp(1.5rem,6vw,2.25rem)] font-medium text-white/90 transition-colors hover:text-sand [&.is-active]:text-sand"
+            >
+              <span class="w-8 text-sm tracking-[0.2em] text-sand/60">0{{ i + 1 }}</span>
+              {{ item.key | transloco }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <div class="mt-8 flex flex-col gap-6">
+        <app-lang-switcher size="lg" class="-ml-4" />
+        <app-status-chip />
+        <div class="flex flex-wrap gap-3">
+          <a
+            [href]="contact.tel"
+            (click)="contact.track('call', 'menu')"
+            class="inline-flex h-12 items-center gap-2 rounded-full bg-sand px-6 font-display font-semibold text-night-950"
+          >
+            <app-icon name="phone" [size]="18" />
+            {{ contact.site.phoneDisplay }}
+          </a>
+          @if (contact.whatsapp) {
+            <a
+              [href]="contact.whatsapp"
+              target="_blank"
+              rel="noopener"
+              (click)="contact.track('whatsapp', 'menu')"
+              class="inline-flex h-12 items-center gap-2 rounded-full border border-sand/50 px-6 text-sand"
+            >
+              <app-icon name="whatsapp" [size]="18" />
+              {{ 'common.whatsapp' | transloco }}
+            </a>
+          }
+          @if (contact.instagram) {
+            <a
+              [href]="contact.instagram"
+              target="_blank"
+              rel="noopener"
+              (click)="contact.track('instagram', 'menu')"
+              class="inline-flex h-12 items-center gap-2 rounded-full border border-sand/50 px-6 text-sand"
+            >
+              <app-icon name="instagram" [size]="18" />
+              {{ 'common.instagram' | transloco }}
+            </a>
+          }
+        </div>
+      </div>
+    </nav>
+
+    <div class="crown-row shrink-0 opacity-90" aria-hidden="true"></div>
+  </div>
+}

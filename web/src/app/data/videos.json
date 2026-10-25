@@ -1,0 +1,50 @@
+[
+  {
+    "id": "polish-rear",
+    "source": "photo/video/IMG_0277.MOV",
+    "serviceSlugs": [
+      "polishing"
+    ],
+    "title": {
+      "ru": "Полировка заднего крыла под контрольным светом",
+      "en": "Polishing a rear quarter panel under inspection lights",
+      "ka": "უკანა ფრთის პოლირება საკონტროლო განათების ქვეშ"
+    },
+    "width": 720,
+    "height": 1280,
+    "duration": 7.1,
+    "sizeKb": 1439
+  },
+  {
+    "id": "polish-door",
+    "source": "photo/video/IMG_9932.MOV",
+    "serviceSlugs": [
+      "polishing"
+    ],
+    "title": {
+      "ru": "Полировка двери в студии Noble",
+      "en": "Polishing a door in the Noble studio",
+      "ka": "კარის პოლირება Noble-ის სტუდიაში"
+    },
+    "width": 720,
+    "height": 1280,
+    "duration": 8.3,
+    "sizeKb": 1538
+  },
+  {
+    "id": "polish-prep",
+    "source": "photo/video/IMG_7185.MOV",
+    "serviceSlugs": [
+      "polishing"
+    ],
+    "title": {
+      "ru": "Машинная обработка лакокрасочного покрытия",
+      "en": "Machine work on the paint",
+      "ka": "საღებავის საფარის მანქანური დამუშავება"
+    },
+    "width": 720,
+    "height": 1280,
+    "duration": 12.5,
+    "sizeKb": 1418
+  }
+]

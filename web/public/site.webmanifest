@@ -1,0 +1,11 @@
+{
+  "name": "Noble Detailing",
+  "short_name": "Noble",
+  "icons": [
+    { "src": "/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/brand/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#234f71",
+  "background_color": "#0b1e2c",
+  "display": "browser"
+}

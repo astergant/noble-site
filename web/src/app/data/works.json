@@ -1,0 +1,34 @@
+[
+  {
+    "id": "porsche-panamera",
+    "car": "Porsche Panamera",
+    "serviceSlugs": ["polishing"],
+    "cover": "works/porsche-panamera-1",
+    "gallery": ["works/porsche-panamera-1"],
+    "todo": "Confirm which services were done on this car"
+  },
+  {
+    "id": "lexus-nx",
+    "car": "Lexus NX",
+    "serviceSlugs": ["polishing"],
+    "cover": "works/lexus-nx-1",
+    "gallery": ["works/lexus-nx-1", "works/lexus-nx-2"],
+    "todo": "Confirm which services were done on this car"
+  },
+  {
+    "id": "bmw",
+    "car": "BMW",
+    "serviceSlugs": ["polishing"],
+    "cover": "works/bmw-1",
+    "gallery": ["works/bmw-1"],
+    "todo": "Confirm model and which services were done on this car"
+  },
+  {
+    "id": "mercedes-amg-interior",
+    "car": "Mercedes-AMG",
+    "serviceSlugs": ["interior-cleaning"],
+    "cover": "works/mercedes-amg-interior-1",
+    "gallery": ["works/mercedes-amg-interior-1"],
+    "todo": "Confirm model and which services were done on this car"
+  }
+]

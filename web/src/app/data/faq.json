@@ -1,0 +1,180 @@
+[
+  {
+    "id": "how-to-book",
+    "group": "general",
+    "q": {
+      "ka": "როგორ ჩავეწერო?",
+      "ru": "Как записаться?",
+      "en": "How do I book?"
+    },
+    "a": {
+      "ka": "დაგვირეკეთ, მოგვწერეთ WhatsApp-ში ან Instagram-ზე. ვპასუხობთ 15 წუთის განმავლობაში, ვთანხმდებით დათვალიერების დროზე და ვასახელებთ ზუსტ ფასს.",
+      "ru": "Позвоните, напишите в WhatsApp или Instagram. Мы отвечаем в течение 15 минут, договариваемся о времени осмотра и называем точную стоимость.",
+      "en": "Call us or message us on WhatsApp or Instagram. We reply within 15 minutes, agree on a time for an inspection and give you the exact price."
+    }
+  },
+  {
+    "id": "why-from-prices",
+    "group": "general",
+    "q": {
+      "ka": "რატომ არის საიტზე ფასები „-დან“?",
+      "ru": "Почему на сайте цены «от»?",
+      "en": "Why are prices on the site shown as “from”?"
+    },
+    "a": {
+      "ka": "ფასი დამოკიდებულია ავტომობილის კლასზე, მდგომარეობასა და სირთულეზე, ფირის შემთხვევაში კი — მასალაზეც. საიტზე მითითებულია საწყისი ფასი, ზუსტ ღირებულებას დათვალიერების შემდეგ გეტყვით.",
+      "ru": "Стоимость зависит от класса автомобиля, его состояния и сложности, а для плёнки — ещё и от материала. На сайте указана стартовая цена, точную стоимость называем после осмотра.",
+      "en": "The price depends on the car’s class, condition and complexity, and for PPF also on the film. The site shows the starting price; we give you the exact price after an inspection."
+    }
+  },
+  {
+    "id": "ppf-risk-zones",
+    "group": "ppf",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full"],
+    "q": {
+      "ka": "რა შედის რისკის ზონების გადაკვრაში?",
+      "ru": "Что входит в оклейку зон риска?",
+      "en": "What does risk-zone PPF cover?"
+    },
+    "a": {
+      "ka": "წინა ბამპერი, წინა ფრთები, ფარები, სარკეები, დგარები, კაპოტი და ზოლი სახურავზე — ელემენტები, რომლებსაც ყველაზე ხშირად ხვდება ქვები და ნაკაწრები.",
+      "ru": "Передний бампер, передние крылья, фары, зеркала, стойки, капот и полоса на крыше — элементы, которые чаще всего страдают от камней и царапин.",
+      "en": "The front bumper, front wings, headlights, mirrors, pillars, bonnet and a strip on the roof — the parts most often hit by stones and scratches."
+    }
+  },
+  {
+    "id": "ppf-full-vs-zones",
+    "group": "ppf",
+    "serviceSlugs": ["ppf-full", "ppf-risk-zones", "ppf-detailing"],
+    "q": {
+      "ka": "რით განსხვავდება სრული გადაკვრა და რა არის დეტალიზაცია?",
+      "ru": "Чем отличается полная оклейка и что такое детализация?",
+      "en": "How is full PPF different, and what is trim detailing?"
+    },
+    "a": {
+      "ka": "სრული გადაკვრისას ფირით იფარება ძარის ყველა შეღებილი ელემენტი. წვრილი დეტალები — ცხაური, ემბლემები და სხვა არაშეღებილი პრიალა ელემენტები — ცალკე იკვრება, ეს არის დეტალიზაცია.",
+      "ru": "При полной оклейке плёнкой закрываются все окрашенные элементы кузова. Мелкие детали — решётка, значки и другие неокрашенные глянцевые элементы — оклеиваются отдельно, это и есть детализация.",
+      "en": "Full PPF covers every painted body panel. Small parts — the grille, badges and other unpainted gloss trim — are wrapped separately; that’s trim detailing."
+    }
+  },
+  {
+    "id": "ppf-duration",
+    "group": "ppf",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full", "ppf-detailing"],
+    "q": {
+      "ka": "რამდენ ხანს გრძელდება ფირის გადაკვრა?",
+      "ru": "Сколько занимает оклейка плёнкой?",
+      "en": "How long does PPF installation take?"
+    },
+    "a": {
+      "ka": "რისკის ზონები — 2 დღიდან, სრული გადაკვრა — 4 დღიდან. დეტალიზაცია გადაკვრას დაახლოებით ერთ დღეს უმატებს.",
+      "ru": "Зоны риска — от 2 дней, полная оклейка — от 4 дней. Детализация добавляет к оклейке примерно один день.",
+      "en": "Risk zones take from 2 days, full PPF from 4 days. Trim detailing adds about one day."
+    }
+  },
+  {
+    "id": "polish-before-ppf",
+    "group": "ppf",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full", "polishing"],
+    "q": {
+      "ka": "საჭიროა თუ არა პოლირება ფირის გადაკვრამდე?",
+      "ru": "Нужна ли полировка перед оклейкой?",
+      "en": "Do I need polishing before PPF?"
+    },
+    "a": {
+      "ka": "ფირი გამჭვირვალეა, ამიტომ ლაქის ნაკაწრები მის ქვეშაც გამოჩნდება. ახალ ავტომობილს პოლირება ხშირად არ სჭირდება, ნახმარისთვის კი ჩვეულებრივ რეკომენდებულია. დათვალიერებისას გეტყვით.",
+      "ru": "Плёнка прозрачная, поэтому царапины на лаке будут видны и под ней. Новому автомобилю полировка часто не нужна, автомобилю с пробегом её обычно рекомендуют. Скажем на осмотре.",
+      "en": "The film is transparent, so scratches in the paint stay visible underneath. A new car often doesn’t need polishing; a used one usually does. We’ll tell you at the inspection."
+    }
+  },
+  {
+    "id": "wash-after-ppf",
+    "group": "ppf",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full"],
+    "q": {
+      "ka": "როდის შეიძლება ავტომობილის რეცხვა გადაკვრის შემდეგ?",
+      "ru": "Когда можно мыть автомобиль после оклейки?",
+      "en": "When can I wash the car after PPF?"
+    },
+    "a": {
+      "ka": "პირველ დღეებში წებო მაგრდება, ამიტომ რეცხვას სჯობს მოერიდოთ. ზუსტ ვადასა და მოვლის რჩევებს ავტომობილის გადაცემისას გეტყვით. შემდეგ — ხელით ან უკონტაქტო რეცხვა, ფირის კიდეებზე ჭავლის მიმართვის გარეშე.",
+      "ru": "В первые дни клей набирает прочность, поэтому мойку лучше отложить. Точный срок и рекомендации по уходу дадим при выдаче автомобиля. Дальше — ручная или бесконтактная мойка, не направляя струю на края плёнки.",
+      "en": "The adhesive cures over the first days, so it’s best to hold off washing. We give you the exact timing and care tips when you collect the car. After that, wash by hand or touchless without aiming the jet at the film edges."
+    }
+  },
+  {
+    "id": "warranty",
+    "group": "warranty",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full"],
+    "q": {
+      "ka": "რა გარანტია გაქვთ?",
+      "ru": "Какая гарантия?",
+      "en": "What warranty do you give?"
+    },
+    "a": {
+      "ka": "ფირზე — 5-დან 10 წლამდე, მასალის მიხედვით. გადაკვრის სამუშაოებზე — 3 წელი.",
+      "ru": "На плёнку — от 5 до 10 лет в зависимости от материала. На работы по оклейке — 3 года.",
+      "en": "The film is covered for 5 to 10 years depending on the material. The installation work is covered for 3 years."
+    }
+  },
+  {
+    "id": "polishing-what",
+    "group": "polishing",
+    "serviceSlugs": ["polishing"],
+    "q": {
+      "ka": "როგორ ხდება პოლირება და რამდენ ხანს გრძელდება?",
+      "ru": "Как проходит полировка и сколько она длится?",
+      "en": "How does polishing work and how long does it take?"
+    },
+    "a": {
+      "ka": "ვასწორებთ საღებავის საფარს ლაქის გახურების მეთოდით — ნაკაწრები იკვრება და ილუქება. სამუშაოს 2–3 დღე სჭირდება. ნაკაწრები, რომლებიც გრუნტამდე ან ლითონამდეა, პოლირებით არ სწორდება.",
+      "ru": "Исправляем лакокрасочное покрытие методом нагревания лака — царапины затягиваются и запаиваются. Работа занимает 2–3 дня. Царапины до грунта или металла полировкой не убираются.",
+      "en": "We correct the paintwork by heating the clear coat so scratches close up and seal. It takes 2–3 days. Scratches that go down to the primer or metal can’t be polished out."
+    }
+  },
+  {
+    "id": "interior-express-vs-full",
+    "group": "interior",
+    "serviceSlugs": ["interior-cleaning", "express-cleaning"],
+    "q": {
+      "ka": "რით განსხვავდება ექსპრეს ქიმწმენდა სრულისგან?",
+      "ru": "Чем экспресс-химчистка отличается от полной?",
+      "en": "How is express cleaning different from a full deep clean?"
+    },
+    "a": {
+      "ka": "ექსპრეს ქიმწმენდა სავარძლების მოხსნის გარეშე, ერთ დღეში სრულდება და რეგულარული მოვლისთვისაა. სრული ქიმწმენდისას ვხსნით მძღოლისა და მგზავრის სავარძლებს და უკანა დივანს, ხალიჩას ვამუშავებთ ექსტრაქტორით; სამუშაოს 1–2 დღე სჭირდება.",
+      "ru": "Экспресс-химчистка делается без снятия сидений за один день и подходит для регулярного ухода. При полной химчистке снимаем водительское и пассажирское сиденья и задний диван, ковёр обрабатываем вытяжным пылесосом; работа занимает 1–2 дня.",
+      "en": "Express cleaning is done without removing the seats, in one day, and suits regular care. For a full deep clean we remove the driver’s and passenger seats and the rear bench and treat the carpet with an extraction vacuum; it takes 1–2 days."
+    }
+  },
+  {
+    "id": "leather-safe",
+    "group": "interior",
+    "serviceSlugs": ["interior-cleaning"],
+    "q": {
+      "ka": "ქიმწმენდა ტყავს არ დააზიანებს?",
+      "ru": "Не повредит ли химчистка кожу?",
+      "en": "Will a deep clean damage leather?"
+    },
+    "a": {
+      "ka": "ტყავს ვამუშავებთ რბილი ქიმიით და რბილი ჯაგრისებით, ქსოვილს — ქიმიით და ექსტრაქტორით. მეთოდს სავარძლის მასალის მიხედვით ვარჩევთ.",
+      "ru": "Кожу обрабатываем щадящей химией и мягкими щётками, ткань — химией и вытяжным пылесосом. Способ подбираем по материалу сидений.",
+      "en": "We treat leather with a gentle cleaner and soft brushes, and fabric with a cleaner and an extraction vacuum. The method depends on the seat material."
+    }
+  },
+  {
+    "id": "sound-options",
+    "group": "sound",
+    "serviceSlugs": ["soundproofing-full", "soundproofing-doors", "soundproofing-arches"],
+    "q": {
+      "ka": "ხმის იზოლაციის რა ვარიანტები არსებობს?",
+      "ru": "Какие есть варианты шумоизоляции?",
+      "en": "What soundproofing options are there?"
+    },
+    "a": {
+      "ka": "მთელი ავტომობილი — 3100 ₾-დან (თაღებით — 3800 ₾-დან, Defender და G-Class — 3800 ₾-დან), 4–5 დღე. ცალკე: კარები — 1000 ₾-დან და თაღები — 1000 ₾-დან, თითო 2 დღე.",
+      "ru": "Весь автомобиль — от 3100 ₾ (с арками — от 3800 ₾, Defender и G-Class — от 3800 ₾), 4–5 дней. Отдельно: двери — от 1000 ₾ и арки — от 1000 ₾, по 2 дня.",
+      "en": "The whole car from 3,100 ₾ (with arches from 3,800 ₾; Defender and G-Class from 3,800 ₾), 4–5 days. Separately: doors from 1,000 ₾ and arches from 1,000 ₾, 2 days each."
+    }
+  }
+]

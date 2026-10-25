@@ -1,0 +1,8 @@
+# Cloudflare Pages redirects. `/` → language is handled by functions/index.ts (Accept-Language).
+/ka/book  /ka/contacts  302
+/ru/book  /ru/contacts  302
+/en/book  /en/contacts  302
+# Individual work pages were replaced by the lightbox on /works.
+/ka/works/*  /ka/works/  301
+/ru/works/*  /ru/works/  301
+/en/works/*  /en/works/  301

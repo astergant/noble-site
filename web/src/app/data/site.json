@@ -1,0 +1,68 @@
+{
+  "siteUrl": "https://nobledetailing.com",
+  "name": "Noble Detailing",
+  "phone": "+995510100999",
+  "phoneDisplay": "+995 510 100 999",
+  "whatsapp": "995510100999",
+  "instagram": "nobledetailing.ge",
+  "telegram": null,
+  "email": null,
+  "address": {
+    "ka": "ვასო გოძიაშვილის I შესახვევი 6, თბილისი",
+    "ru": "ул. Васо Годзиашвили, 6, Тбилиси",
+    "en": "6 Vaso Godziashvili I Turn, Tbilisi 0199"
+  },
+  "postalAddress": {
+    "street": "6 Vaso Godziashvili I Turn",
+    "locality": "Tbilisi",
+    "postalCode": "0199",
+    "country": "GE"
+  },
+  "geo": { "lat": 41.7551996, "lng": 44.7669368 },
+  "maps": {
+    "google": "https://maps.app.goo.gl/fUCh8CwoRURiakpw9",
+    "yandex": "https://yandex.com/maps/org/noble/197515468762/",
+    "embed": "https://www.google.com/maps?q=41.7551996,44.7669368&z=16&output=embed",
+    "yandexWidget": "https://yandex.com/map-widget/v1/?ll=44.766503%2C41.755064&z=16&oid=197515468762&ol=biz"
+  },
+  "hours": {
+    "timezone": "Asia/Tbilisi",
+    "todo": "Opening time not confirmed by the client; 10:00–20:00 daily is an assumption",
+    "schedule": [
+      { "day": 1, "open": "10:00", "close": "20:00" },
+      { "day": 2, "open": "10:00", "close": "20:00" },
+      { "day": 3, "open": "10:00", "close": "20:00" },
+      { "day": 4, "open": "10:00", "close": "20:00" },
+      { "day": 5, "open": "10:00", "close": "20:00" },
+      { "day": 6, "open": "10:00", "close": "20:00" },
+      { "day": 7, "open": "10:00", "close": "20:00" }
+    ]
+  },
+  "responseTimeMinutes": 15,
+  "rating": {
+    "google": {
+      "value": 4.9,
+      "count": 57,
+      "url": "https://maps.app.goo.gl/fUCh8CwoRURiakpw9",
+      "updated": "2026-10"
+    },
+    "yandex": {
+      "value": 4.4,
+      "count": 6,
+      "url": "https://yandex.com/maps/org/noble/197515468762/reviews/",
+      "updated": "2026-10"
+    }
+  },
+  "warranty": {
+    "filmYears": { "min": 5, "max": 10 },
+    "ppfWorkYears": 3,
+    "todo": "Warranty terms must be reviewed by a lawyer"
+  },
+  "analytics": { "ga4": "", "metaPixel": "", "gtm": "" },
+  "features": {
+    "leadForm": true,
+    "telegram": false,
+    "cursorRing": false,
+    "smoothScroll": false
+  }
+}

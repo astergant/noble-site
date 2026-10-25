@@ -1,0 +1,44 @@
+[
+  {
+    "id": "google-dmitry-yakovlev",
+    "source": "google",
+    "author": "Дмитрий Яковлев",
+    "rating": 5,
+    "lang": "ru",
+    "text": "Благодарю всех ребят команды Noble за исключительно качественную работу и внимание к деталям. Тачка прям преобразилась. Плёнка спереди и керамика однозначно глубже раскрыли цвет, защищают от едкого птичьего дерьма, внезапных камней навстречу да и прочих ягод. Ну и теперь точно сохранили товарный вид любимой машинке на пару лет. Так что, если вы сомневались кому доверить сервис в Тбилиси за адекватный ценник, то смело рекомендую этот детейлинг."
+  },
+  {
+    "id": "google-bogdan-rogulsky",
+    "source": "google",
+    "author": "Богдан Рогульский",
+    "rating": 5,
+    "lang": "ru",
+    "text": "Обращались на детейлинг с двумя нашими автомобилями — и оба раза остались максимально довольны. Услуги выполнены на высочайшем уровне: кузов, салон, мелкие детали — всё выглядит идеально. Машины будто только из салона, блеск, чистота впечатляют! Спасибо за качественный сервис и отличное отношение! Обязательно вернёмся ещё с другими автомобилями и будем рекомендовать всем знакомым!!"
+  },
+  {
+    "id": "google-rina-golovashchik",
+    "source": "google",
+    "author": "Rina Golovashchik",
+    "rating": 5,
+    "lang": "en",
+    "text": "Great service! We’re really glad we found these guys. We dealt with Boris and were very happy with both the work and the overall experience. He explained everything, answered all our questions, and they treated the car with great care. Everything was done properly and without any hassle. We’ll definitely be coming back and would happily recommend them!"
+  },
+  {
+    "id": "google-arm-m",
+    "source": "google",
+    "author": "Arm M",
+    "rating": 5,
+    "lang": "ru",
+    "text": "Обратился в Noble Detailing по рекомендации друзей. Делал полировку и керамику — результат просто огонь! Машина выглядит как новая. Очень доволен уровнем сервиса и отношением к клиенту. Ребята знают своё дело.",
+    "todo": "Rating not given in the brief (assumed 5): confirm on Google"
+  },
+  {
+    "id": "google-nika-amiranidze",
+    "source": "google",
+    "author": "Nika Amiranidze",
+    "rating": 5,
+    "lang": "ru",
+    "text": "Мой опыт полировки/детейлинга автомобиля был просто фантастическим! Я невероятно доволен результатом – моя машина выглядит как новая, как снаружи, так и внутри. Команда проделала потрясающую работу, уделив внимание каждой детали. Я настоятельно рекомендую их услуги, если вы хотите, чтобы ваш автомобиль сиял!",
+    "todo": "Rating not given in the brief (assumed 5): confirm on Google"
+  }
+]

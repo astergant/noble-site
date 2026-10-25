@@ -1,0 +1,194 @@
+<section class="on-dark relative isolate flex min-h-[calc(100svh-var(--spacing-header))] flex-col overflow-hidden bg-night text-white">
+  <div class="absolute inset-0 -z-20" aria-hidden="true">
+    <app-media-frame id="hero/reflection" ratio="fill" sizes="100vw" alt="" [priority]="true" class="h-full" />
+  </div>
+  <div
+    class="absolute inset-0 -z-10 bg-gradient-to-t from-night-950 via-night-950/75 to-night-950/40 md:bg-gradient-to-r md:from-night-950 md:via-night-950/80 md:to-night-950/20"
+    aria-hidden="true"
+  ></div>
+
+  <div class="container-page grid flex-1 items-center gap-10 py-16 md:py-24 lg:grid-cols-[1.2fr_24rem] lg:gap-16">
+    <div>
+      <p class="eyebrow">{{ 'home.hero.eyebrow' | transloco }}</p>
+
+      <h1 class="mt-6 max-w-5xl text-[clamp(2.5rem,1.4rem+5vw,5.5rem)] leading-[1.02] font-semibold text-white">
+        <span class="block">{{ 'home.hero.titleLine1' | transloco }}</span>
+        <span class="block text-sand">{{ 'home.hero.titleLine2' | transloco }}</span>
+      </h1>
+
+      <p class="mt-7 max-w-xl text-lead text-white/75">{{ 'home.hero.lead' | transloco }}</p>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a
+          [href]="contact.tel"
+          (click)="contact.track('call', 'hero')"
+          class="inline-flex h-14 items-center gap-3 rounded-full bg-sand px-7 font-display text-lg font-semibold text-night-950 transition-colors hover:bg-sand-300"
+        >
+          <app-icon name="phone" [size]="20" />
+          {{ 'common.call' | transloco }}
+        </a>
+        @if (contact.whatsapp) {
+          <a
+            [href]="contact.whatsapp"
+            target="_blank"
+            rel="noopener"
+            (click)="contact.track('whatsapp', 'hero')"
+            class="inline-flex h-14 items-center gap-3 rounded-full border border-sand/50 px-7 font-display text-lg text-sand transition-colors hover:border-sand hover:bg-sand/10"
+          >
+            <app-icon name="whatsapp" [size]="20" />
+            {{ 'common.writeWhatsapp' | transloco }}
+          </a>
+        }
+      </div>
+
+      <ul class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/70">
+        <li class="flex items-center gap-2">
+          <app-icon name="shield-check" [size]="16" class="text-sand" />
+          {{ 'home.hero.trustFilm' | transloco: { min: site.warranty.filmYears.min, max: site.warranty.filmYears.max } }}
+        </li>
+        <li class="flex items-center gap-2">
+          <app-icon name="award" [size]="16" class="text-sand" />
+          {{ 'home.hero.trustWork' | transloco: { years: site.warranty.ppfWorkYears } }}
+        </li>
+        <li class="flex items-center gap-2">
+          <app-icon name="clock" [size]="16" class="text-sand" />
+          {{ 'home.hero.trustReply' | transloco: { minutes: site.responseTimeMinutes } }}
+        </li>
+        <li class="flex items-center gap-2">
+          <app-icon name="sparkles" [size]="16" class="text-sand" />
+          {{ 'lead.home.discountShort' | transloco }}
+        </li>
+        <li><app-status-chip /></li>
+      </ul>
+    </div>
+
+    @if (site.features.leadForm) {
+      <div id="lead" class="w-full rounded-card bg-white p-6 text-ink shadow-lift md:p-8">
+        <p class="eyebrow text-sand-700">{{ 'lead.home.eyebrow' | transloco }}</p>
+        <h2 class="mt-2 text-h3 text-night-950">{{ 'lead.home.title' | transloco }}</h2>
+        <p
+          class="mt-3 rounded-control bg-sand-100 px-4 py-3 text-sm font-medium text-night-950"
+          role="status"
+        >
+          {{ 'lead.home.discount' | transloco }}
+        </p>
+        <p class="mt-3 text-sm text-muted">{{ 'lead.home.lead' | transloco: { minutes: site.responseTimeMinutes } }}</p>
+        <app-lead-form class="mt-6" source="home" />
+      </div>
+    }
+  </div>
+
+  <div class="crown-row opacity-90" aria-hidden="true"></div>
+</section>
+
+<nav class="bg-night-950" [attr.aria-label]="'nav.services' | transloco">
+  <ul class="container-page grid grid-cols-2 gap-px py-px lg:grid-cols-4">
+    @for (c of categories; track c; let i = $index) {
+      <li class="min-w-0 bg-night-950">
+        <a
+          [routerLink]="langs.link('/services')"
+          [fragment]="c"
+          class="group flex h-full items-center justify-between gap-2 px-2 py-6 text-white/85 transition-colors hover:text-sand md:gap-3 md:px-6 md:py-8"
+        >
+          <span class="flex min-w-0 items-baseline gap-2 md:gap-3">
+            <span class="font-display text-sm tracking-[0.2em] text-sand/60">0{{ i + 1 }}</span>
+            <span class="font-display text-lg md:text-xl">{{ 'categories.' + c | transloco }}</span>
+          </span>
+          <app-icon name="arrow-right" [size]="18" class="shrink-0 transition-transform group-hover:translate-x-1" />
+        </a>
+      </li>
+    }
+  </ul>
+</nav>
+
+<section class="py-section" aria-labelledby="home-services-title">
+  <div class="container-page">
+    <app-section-heading
+      headingId="home-services-title"
+      [eyebrow]="'home.services.eyebrow' | transloco"
+      [title]="'home.services.title' | transloco"
+      [lead]="'home.services.lead' | transloco"
+    >
+      <a [routerLink]="langs.link('/services')" class="inline-flex shrink-0 items-center gap-2 text-night hover:underline">
+        {{ 'common.allServices' | transloco }} <app-icon name="arrow-right" [size]="16" />
+      </a>
+    </app-section-heading>
+    <ul class="mt-10 grid gap-6 md:grid-cols-2">
+      @for (s of flagship; track s.slug; let i = $index) {
+        <li [appReveal]="i * 80"><app-service-card [service]="s" [featured]="true" /></li>
+      }
+    </ul>
+    <ul class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      @for (s of popular; track s.slug; let i = $index) {
+        <li [appReveal]="i * 80"><app-service-card [service]="s" /></li>
+      }
+    </ul>
+    <p class="mt-8 text-sm text-subtle">{{ 'common.exactPrice' | transloco }}</p>
+  </div>
+</section>
+
+<section class="on-dark bg-night-950 py-section text-white" aria-labelledby="home-works-title">
+  <div class="container-page">
+    <app-section-heading
+      headingId="home-works-title"
+      [dark]="true"
+      [eyebrow]="'home.works.eyebrow' | transloco"
+      [title]="'home.works.title' | transloco"
+      [lead]="'home.works.lead' | transloco"
+    >
+      <a [routerLink]="langs.link('/works')" class="inline-flex shrink-0 items-center gap-2 text-sand hover:underline">
+        {{ 'common.viewAll' | transloco }} <app-icon name="arrow-right" [size]="16" />
+      </a>
+    </app-section-heading>
+    <app-works-grid class="mt-10" [works]="works" gridClass="lg:grid-cols-4" sizes="(min-width: 1024px) 25vw, 50vw" />
+  </div>
+</section>
+
+<section class="py-section" aria-labelledby="home-studio-title">
+  <div class="container-page grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+    <div class="grid grid-cols-5 gap-3" appReveal>
+      <app-media-frame id="studio/logo-wall" ratio="3 / 4" sizes="(min-width: 1024px) 30vw, 60vw" class="col-span-3 rounded-card" />
+      <div class="col-span-2 grid gap-3">
+        <app-media-frame id="studio/lounge" ratio="1 / 1" sizes="(min-width: 1024px) 20vw, 40vw" class="rounded-card" />
+        <app-media-frame id="studio/glass-bays" ratio="1 / 1" sizes="(min-width: 1024px) 20vw, 40vw" class="rounded-card" />
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow text-sand-700">{{ 'about.intro.eyebrow' | transloco }}</p>
+      <h2 id="home-studio-title" class="mt-3 text-h2 text-night-950">{{ 'about.intro.title' | transloco }}</h2>
+      <p class="mt-5 text-lead text-muted">{{ 'about.intro.text' | transloco }}</p>
+      <a
+        [routerLink]="langs.link('/about')"
+        class="mt-8 inline-flex h-12 items-center gap-2 rounded-full border border-night/30 px-6 font-display font-semibold text-night transition-colors hover:bg-night-50"
+      >
+        {{ 'home.studio.cta' | transloco }} <app-icon name="arrow-right" [size]="16" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="overflow-hidden bg-mist py-section" aria-labelledby="home-reviews-title">
+  <div class="container-page">
+    <app-section-heading
+      headingId="home-reviews-title"
+      [eyebrow]="'home.reviews.eyebrow' | transloco"
+      [title]="'home.reviews.title' | transloco"
+      [lead]="'home.reviews.lead' | transloco: { value: rating, count: site.rating.google.count }"
+    />
+    <app-rating-summary class="mt-8 block" />
+    <app-reviews-carousel class="mt-10" [reviews]="reviews" [label]="'home.reviews.title' | transloco">
+      <a [routerLink]="langs.link('/reviews')" class="ml-auto inline-flex items-center gap-2 text-night hover:underline">
+        {{ 'common.viewAll' | transloco }} <app-icon name="arrow-right" [size]="16" />
+      </a>
+    </app-reviews-carousel>
+  </div>
+</section>
+
+<section class="py-section" aria-labelledby="home-map-title">
+  <div class="container-page">
+    <app-section-heading headingId="home-map-title" [eyebrow]="'about.map.eyebrow' | transloco" [title]="'about.map.title' | transloco" />
+    <app-contact-details class="mt-10" placement="home_map" />
+  </div>
+</section>
+
+<app-contact-cta placement="home_cta" />

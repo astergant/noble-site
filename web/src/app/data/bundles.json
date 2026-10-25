@@ -1,0 +1,35 @@
+[
+  {
+    "id": "new-car-protection",
+    "services": ["polishing", "ppf-risk-zones", "ppf-detailing"],
+    "name": { "ka": "ახალი ავტომობილის დაცვა", "ru": "Защита нового автомобиля", "en": "New car protection" },
+    "description": {
+      "ka": "პოლირება, რისკის ზონების დაფარვა ფირით და შეუღებავი მბზინავი ელემენტები.",
+      "ru": "Полировка, оклейка риск-зон и неокрашенных глянцевых элементов.",
+      "en": "Polishing, PPF on high-impact areas and on unpainted gloss parts."
+    },
+    "todo": "Bundle composition drafted by the agent from the price list: confirm name, services and whether there is a bundle price"
+  },
+  {
+    "id": "full-protection",
+    "services": ["ppf-full", "ppf-detailing"],
+    "name": { "ka": "სრული დაცვა", "ru": "Полная защита", "en": "Full protection" },
+    "description": {
+      "ka": "მთელი ძარა ფირის ქვეშ, დეტალიზაციის ჩათვლით.",
+      "ru": "Весь кузов под плёнкой, включая детализацию.",
+      "en": "The whole body under film, trim detailing included."
+    },
+    "todo": "Bundle composition drafted by the agent from the price list: confirm name, services and whether there is a bundle price"
+  },
+  {
+    "id": "quiet-cabin",
+    "services": ["soundproofing-doors", "soundproofing-arches"],
+    "name": { "ka": "მშვიდი სალონი", "ru": "Тихий салон", "en": "Quiet cabin" },
+    "description": {
+      "ka": "კარების და თაღების ხმის იზოლაცია ერთ ვიზიტში.",
+      "ru": "Шумоизоляция дверей и арок за один визит.",
+      "en": "Door and wheel arch soundproofing in one visit."
+    },
+    "todo": "Bundle composition drafted by the agent from the price list: confirm name, services and whether there is a bundle price"
+  }
+]

@@ -1,0 +1,104 @@
+<div class="crown-row bg-night opacity-95" aria-hidden="true"></div>
+
+<div class="container-page grid gap-12 py-16 md:grid-cols-2 md:py-20 lg:grid-cols-[1.4fr_1fr_1.2fr_1fr]">
+  <div class="max-w-xs">
+    <a [routerLink]="langs.link('/')" class="inline-block" aria-label="Noble Detailing">
+      <img ngSrc="/brand/logo-horizontal-sand.webp" width="400" height="130" alt="Noble Detailing" class="h-11 w-auto" />
+    </a>
+    <p class="mt-5 text-[0.9375rem] leading-relaxed">{{ 'footer.tagline' | transloco }}</p>
+  </div>
+
+  <nav [attr.aria-labelledby]="'footer-nav-title'">
+    <h2 id="footer-nav-title" class="text-xs font-medium tracking-[0.2em] text-sand uppercase">
+      {{ 'footer.navigation' | transloco }}
+    </h2>
+    <ul class="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-[0.9375rem] md:grid-cols-1">
+      @for (item of nav; track item.key) {
+        <li>
+          <a [routerLink]="langs.link(item.path)" class="transition-colors hover:text-sand">{{ item.key | transloco }}</a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <div>
+    <h2 class="text-xs font-medium tracking-[0.2em] text-sand uppercase">{{ 'footer.contacts' | transloco }}</h2>
+    <ul class="mt-5 space-y-3 text-[0.9375rem]">
+      <li>
+        <a
+          [href]="site.maps.google"
+          target="_blank"
+          rel="noopener"
+          class="flex gap-3 transition-colors hover:text-sand"
+        >
+          <app-icon name="map-pin" [size]="18" class="mt-0.5 text-sand/70" />
+          <span>{{ langs.pick(site.address) }}</span>
+        </a>
+      </li>
+      <li>
+        <a [href]="contact.tel" (click)="contact.track('call', 'footer')" class="flex gap-3 transition-colors hover:text-sand">
+          <app-icon name="phone" [size]="18" class="mt-0.5 text-sand/70" />
+          <span>{{ site.phoneDisplay }}</span>
+        </a>
+      </li>
+      @if (contact.whatsapp) {
+        <li>
+          <a
+            [href]="contact.whatsapp"
+            target="_blank"
+            rel="noopener"
+            (click)="contact.track('whatsapp', 'footer')"
+            class="flex gap-3 transition-colors hover:text-sand"
+          >
+            <app-icon name="whatsapp" [size]="18" class="mt-0.5 text-sand/70" />
+            <span>WhatsApp</span>
+          </a>
+        </li>
+      }
+      @if (contact.instagram) {
+        <li>
+          <a
+            [href]="contact.instagram"
+            target="_blank"
+            rel="noopener"
+            (click)="contact.track('instagram', 'footer')"
+            class="flex gap-3 transition-colors hover:text-sand"
+          >
+            <app-icon name="instagram" [size]="18" class="mt-0.5 text-sand/70" />
+            <span>&#64;{{ site.instagram }}</span>
+          </a>
+        </li>
+      }
+      @if (contact.telegram) {
+        <li>
+          <a
+            [href]="contact.telegram"
+            target="_blank"
+            rel="noopener"
+            (click)="contact.track('telegram', 'footer')"
+            class="flex gap-3 transition-colors hover:text-sand"
+          >
+            <app-icon name="telegram" [size]="18" class="mt-0.5 text-sand/70" />
+            <span>Telegram</span>
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+
+  <div>
+    <h2 class="text-xs font-medium tracking-[0.2em] text-sand uppercase">{{ 'footer.hours' | transloco }}</h2>
+    <p class="mt-5 text-[0.9375rem]">{{ 'status.daily' | transloco: { open: hours.open, close: hours.close } }}</p>
+    <app-status-chip class="mt-4" />
+  </div>
+</div>
+
+<div class="border-t border-line-dark">
+  <div class="container-page flex flex-col gap-3 py-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
+    <p>{{ 'footer.rights' | transloco: { year: year } }}</p>
+    <ul class="flex flex-wrap gap-x-6 gap-y-2">
+      <li><a [routerLink]="langs.link('/privacy')" class="transition-colors hover:text-sand">{{ 'footer.privacy' | transloco }}</a></li>
+      <li><a [routerLink]="langs.link('/terms')" class="transition-colors hover:text-sand">{{ 'footer.terms' | transloco }}</a></li>
+    </ul>
+  </div>
+</div>

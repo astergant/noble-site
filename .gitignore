@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.angular/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+google-sa.json
+**/google-sa.json
+tools/.cache/
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json

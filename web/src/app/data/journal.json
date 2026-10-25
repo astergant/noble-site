@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "ppf-care",
+    "date": "2026-10-07",
+    "readMinutes": 3,
+    "cover": "works/porsche-panamera-1",
+    "serviceSlugs": ["ppf-risk-zones", "ppf-full"],
+    "title": {
+      "ka": "PPF ფირის მოვლა: პირველი კვირები და შემდეგ",
+      "ru": "Уход за плёнкой PPF: первые недели и дальше",
+      "en": "Caring for PPF: the first weeks and beyond"
+    },
+    "excerpt": {
+      "ka": "როდის შეიძლება რეცხვა, რით და რისგან უნდა დავიცვათ ფირი, რომ დიდხანს დარჩეს გამჭვირვალე.",
+      "ru": "Когда можно мыть, чем и чего избегать, чтобы плёнка дольше оставалась прозрачной и ровной.",
+      "en": "When to wash, what to use and what to avoid so the film stays clear and smooth for longer."
+    }
+  },
+  {
+    "slug": "safe-car-wash",
+    "date": "2026-10-06",
+    "readMinutes": 3,
+    "cover": "works/lexus-nx-2",
+    "serviceSlugs": ["polishing", "ppf-full"],
+    "title": {
+      "ka": "როგორ გავრეცხოთ ავტომობილი ნაკაწრების გარეშე",
+      "ru": "Как мыть автомобиль, чтобы не появлялись царапины",
+      "en": "How to wash your car without scratching it"
+    },
+    "excerpt": {
+      "ka": "წვრილი ნაკაწრების უმეტესობა რეცხვისას ჩნდება. ორი ვედროს მეთოდი და რამდენიმე წესი საღებავს დაიცავს.",
+      "ru": "Большинство мелких царапин появляется во время мойки. Метод двух вёдер и несколько правил сберегут лак.",
+      "en": "Most fine scratches appear during washing. The two-bucket method and a few rules will save your paint."
+    }
+  },
+  {
+    "slug": "leather-interior-care",
+    "date": "2026-10-04",
+    "readMinutes": 3,
+    "cover": "works/mercedes-amg-interior-1",
+    "serviceSlugs": ["interior-cleaning"],
+    "title": {
+      "ka": "ტყავის სალონის მოვლა",
+      "ru": "Уход за кожаным салоном",
+      "en": "Caring for a leather interior"
+    },
+    "excerpt": {
+      "ka": "რამდენად ხშირად და რით გავწმინდოთ ტყავი, რომ არ გაშრეს, არ გაპრიალდეს და არ დაიბზაროს.",
+      "ru": "Как часто и чем чистить кожу, чтобы она не пересыхала, не лоснилась и не трескалась.",
+      "en": "How often and with what to clean leather so it doesn’t dry out, turn shiny or crack."
+    }
+  },
+  {
+    "slug": "fabric-interior-care",
+    "date": "2026-10-02",
+    "readMinutes": 2,
+    "cover": "studio/bay",
+    "serviceSlugs": ["express-cleaning", "interior-cleaning"],
+    "title": {
+      "ka": "ქსოვილის სალონი: სისუფთავე ქიმწმენდებს შორის",
+      "ru": "Тканевый салон: чистота между химчистками",
+      "en": "Fabric interiors: staying clean between deep cleans"
+    },
+    "excerpt": {
+      "ka": "რეგულარული მოვლა, რა ვქნათ დაღვრილ სასმელთან და როდის არის საჭირო ქიმწმენდა.",
+      "ru": "Регулярный уход, что делать с пролитым напитком и когда без химчистки уже не обойтись.",
+      "en": "Regular care, what to do about a spilled drink and when it’s time for a deep clean."
+    }
+  },
+  {
+    "slug": "polishing-basics",
+    "date": "2026-09-30",
+    "readMinutes": 3,
+    "cover": "hero/reflection",
+    "serviceSlugs": ["polishing"],
+    "title": {
+      "ka": "ძარის პოლირება: რას ასწორებს და როდის არის საჭირო",
+      "ru": "Полировка кузова: что она исправляет и когда нужна",
+      "en": "Paint polishing: what it fixes and when you need it"
+    },
+    "excerpt": {
+      "ka": "რომელი დეფექტების გამოსწორება შეიძლება პოლირებით, რომლის — არა, და რატომ ტარდება ის ფირის გადაკვრამდე.",
+      "ru": "Какие дефекты убирает полировка, какие нет и почему её делают перед оклейкой плёнкой.",
+      "en": "Which defects polishing removes, which it doesn’t, and why it’s done before PPF."
+    }
+  }
+]

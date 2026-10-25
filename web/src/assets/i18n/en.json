@@ -1,0 +1,430 @@
+{
+  "common": {
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "writeWhatsapp": "Message on WhatsApp",
+    "instagram": "Instagram",
+    "telegram": "Telegram",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "priceFrom": "from {{value}}",
+    "exactPrice": "Exact price after inspection",
+    "responseTime": "We reply within {{minutes}} minutes",
+    "more": "Learn more",
+    "allServices": "All services and prices",
+    "backHome": "Back to home",
+    "language": "Language",
+    "placeholder": "Page content will be added in the next stages.",
+    "viewAll": "View all",
+    "close": "Close",
+    "price": "Price",
+    "duration": "Time",
+    "warranty": "Warranty",
+    "includes": "What’s included",
+    "photoSoon": "Photo coming soon"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "prices": "Prices",
+    "works": "Work",
+    "about": "About",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "journal": "Journal",
+    "contacts": "Contact",
+    "main": "Main navigation"
+  },
+  "lang": {
+    "ka": "ქართული",
+    "ru": "Русский",
+    "en": "English"
+  },
+  "status": {
+    "open": "Open until {{close}}",
+    "closed": "Closed · opens at {{open}}",
+    "daily": "Daily {{open}}–{{close}}"
+  },
+  "footer": {
+    "tagline": "Car protection and care studio in Tbilisi.",
+    "navigation": "Navigation",
+    "contacts": "Contact",
+    "hours": "Opening hours",
+    "privacy": "Privacy policy",
+    "terms": "Warranty terms",
+    "rights": "© {{year}} Noble Detailing"
+  },
+  "cookies": {
+    "text": "We use analytics cookies only with your consent, to make the site better.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "policy": "Learn more"
+  },
+  "contact": {
+    "callAria": "Call {{phone}}",
+    "whatsappAria": "Message us on WhatsApp",
+    "instagramAria": "Noble Detailing on Instagram",
+    "floatingAria": "Quick contact"
+  },
+  "categories": {
+    "protection": "PPF film",
+    "body": "Paint",
+    "interior": "Interior",
+    "sound": "Soundproofing",
+    "wheels": "Wheels"
+  },
+  "priceVariants": {
+    "standard": "Sedan, crossover, SUV",
+    "sedan": "Sedan",
+    "crossover": "Crossover",
+    "suv": "SUV",
+    "defender_gclass": "Defender, G-Class",
+    "withArches": "with arches"
+  },
+  "breadcrumbs": {
+    "aria": "Breadcrumb",
+    "home": "Home"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Detailing studio · Tbilisi",
+      "titleLine1": "Protection and care",
+      "titleLine2": "for your car",
+      "lead": "Paint protection film, polishing, interior cleaning. Tbilisi.",
+      "trustFilm": "{{min}}–{{max}}-year film warranty",
+      "trustWork": "{{years}}-year workmanship warranty",
+      "trustReply": "Reply within {{minutes}} minutes"
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "Protection and care",
+      "lead": "The studio’s flagship is paint protection film (PPF)."
+    },
+    "works": {
+      "eyebrow": "Work",
+      "title": "Cars in our studio",
+      "lead": "Real photos from the studio."
+    },
+    "studio": {
+      "cta": "About the studio"
+    },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "What clients say",
+      "lead": "Google rating: {{value}} from {{count}} reviews."
+    }
+  },
+  "pages": {
+    "services": {
+      "eyebrow": "Services",
+      "title": "Services",
+      "lead": "Every service shows a starting price and turnaround. Exact price after inspection."
+    },
+    "prices": {
+      "eyebrow": "Prices",
+      "title": "Prices",
+      "lead": "The price depends on the condition of the car. We give an exact quote after inspection."
+    },
+    "works": {
+      "eyebrow": "Work",
+      "title": "Our work",
+      "lead": "Cars that have been through our studio."
+    },
+    "about": {
+      "eyebrow": "Studio",
+      "title": "About us",
+      "lead": "A detailing studio in Tbilisi: what we do, how the studio is set up and how to find us."
+    },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "Reviews",
+      "lead": "Client reviews from Google Maps — original wording, no edits."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Questions and answers",
+      "lead": "Briefly about film, turnaround, warranty and care."
+    },
+    "journal": {
+      "eyebrow": "Journal",
+      "title": "Journal",
+      "lead": "Car care, without the fluff."
+    },
+    "contacts": {
+      "eyebrow": "Contact",
+      "title": "Contact",
+      "lead": "Call or message us — we reply within 15 minutes."
+    },
+    "privacy": {
+      "eyebrow": "Documents",
+      "title": "Privacy policy",
+      "lead": "How we process and protect your data."
+    },
+    "terms": {
+      "eyebrow": "Documents",
+      "title": "Warranty terms",
+      "lead": "Terms of service and warranty."
+    },
+    "service": {
+      "eyebrow": "Service",
+      "duration": "Turnaround",
+      "price": "Price"
+    },
+    "work": {
+      "eyebrow": "Project"
+    },
+    "article": {
+      "eyebrow": "Journal"
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "text": "The link may have changed. Go back to the home page or pick a service.",
+    "home": "Back to home",
+    "services": "Services"
+  },
+  "seo": {
+    "home": {
+      "title": "Noble Detailing — PPF, polishing and interior cleaning in Tbilisi",
+      "description": "Paint protection film, polishing, interior detailing and soundproofing in Tbilisi. 5–10-year film warranty, 3-year workmanship warranty."
+    },
+    "services": {
+      "title": "Services and prices — Noble Detailing",
+      "description": "PPF, polishing, interior cleaning, soundproofing and wheel refinishing. Starting prices and turnaround."
+    },
+    "prices": {
+      "title": "Detailing prices in Tbilisi — Noble Detailing",
+      "description": "Starting prices for PPF, polishing and interior cleaning. Exact price after inspection."
+    },
+    "works": {
+      "title": "Our work — Noble Detailing",
+      "description": "PPF, polishing and interior detailing projects from our studio."
+    },
+    "about": {
+      "title": "About the studio — Noble Detailing",
+      "description": "A detailing studio in Tbilisi: services, studio photos, warranty and map."
+    },
+    "reviews": {
+      "title": "Reviews — Noble Detailing",
+      "description": "Noble Detailing client reviews on Google Maps: rated 4.9 out of 5."
+    },
+    "faq": {
+      "title": "FAQ — Noble Detailing",
+      "description": "Answers about PPF, polishing, interior cleaning, warranty and prices."
+    },
+    "journal": {
+      "title": "Journal — Noble Detailing",
+      "description": "Articles about car protection and care."
+    },
+    "contacts": {
+      "title": "Contact — Noble Detailing, Tbilisi",
+      "description": "Address, opening hours, phone, WhatsApp and Instagram. We reply within 15 minutes."
+    },
+    "privacy": {
+      "title": "Privacy policy — Noble Detailing",
+      "description": "How we process personal data."
+    },
+    "terms": {
+      "title": "Warranty terms — Noble Detailing",
+      "description": "Terms of service and warranty."
+    },
+    "notFound": {
+      "title": "Page not found — Noble Detailing",
+      "description": "Page not found."
+    }
+  },
+  "cta": {
+    "eyebrow": "Contact",
+    "title": "Let’s talk about your car",
+    "text": "Call or message us on WhatsApp — we reply within {{minutes}} minutes and suggest what suits your car."
+  },
+  "services": {
+    "flagship": "Studio flagship",
+    "categoriesAria": "Service categories",
+    "categoryLead": {
+      "protection": "Polyurethane film takes the chips and scratches while the factory paint stays untouched.",
+      "body": "Paint correction.",
+      "interior": "Interior cleaning matched to the upholstery material.",
+      "sound": "Vibration and noise insulation for a quieter cabin.",
+      "wheels": "A new wheel coating, oven-cured."
+    },
+    "bundlesTitle": "Packages",
+    "bundlesLead": "Services that are often done together.",
+    "bundlePrice": "Package price after inspection.",
+    "notFoundTitle": "Didn’t find what you need?"
+  },
+  "service": {
+    "about": "About the service",
+    "ppfCompareTitle": "High-impact areas or full body?",
+    "ppfCompareLead": "Compare the two PPF options. We’ll help you choose what suits your car.",
+    "works": "Work with this service",
+    "related": "Often ordered together",
+    "faq": "Questions about this service",
+    "allFaq": "All questions",
+    "articles": "Worth reading",
+    "videos": "What it looks like in the studio",
+    "videosLead": "Real footage of our work, unedited and unretouched."
+  },
+  "video": {
+    "play": "Play video",
+    "pause": "Pause video"
+  },
+  "prices": {
+    "note": "Prices are “from”. The exact price depends on the car and its condition and is confirmed after inspection.",
+    "carClass": "Car class",
+    "details": "About the service",
+    "base": "Base price"
+  },
+  "works": {
+    "filterAria": "Filter by category",
+    "all": "All",
+    "more": "More of our work on Instagram.",
+    "openPhotos": "{{car}}: open photos ({{count}})",
+    "tapHint": "Tap a photo to enlarge it. Browse with the arrows or by swiping.",
+    "videos": "Studio videos",
+    "videosLead": "Paint polishing — real footage of our work, unedited and unretouched."
+  },
+  "lightbox": {
+    "aria": "Photo viewer",
+    "prev": "Previous photo",
+    "next": "Next photo",
+    "counter": "{{index}} / {{total}}",
+    "open": "Open photo: {{alt}}"
+  },
+  "map": {
+    "title": "Map: Noble Detailing, Tbilisi",
+    "yandex": "Yandex Maps"
+  },
+  "reviews": {
+    "ratingAria": "Rating: {{value}} out of 5",
+    "source": {
+      "google": "Google",
+      "yandex": "Yandex Maps"
+    },
+    "onSource": "Source",
+    "summary": "{{source}} · {{count}} reviews",
+    "disclaimer": "Reviews are copied from Google Maps unchanged. Google and Yandex Maps ratings are updated manually.",
+    "originalIn": {
+      "ka": "Original in Georgian",
+      "ru": "Original in Russian",
+      "en": "Original in English"
+    },
+    "summaryRatings": "{{source}} · {{count}} ratings",
+    "listTitle": "What clients say",
+    "slide": "Review {{index}} of {{total}}",
+    "prev": "Previous reviews",
+    "next": "Next reviews",
+    "leaveTitle": "Been to see us?",
+    "leaveText": "Your opinion matters. Leave a review on Google or Yandex Maps — it helps other owners choose a studio.",
+    "openOn": "Reviews on {{source}}"
+  },
+  "contacts": {
+    "address": "Address",
+    "phone": "Phone",
+    "write": "Message us"
+  },
+  "about": {
+    "intro": {
+      "eyebrow": "Studio",
+      "title": "A detailing studio in Tbilisi",
+      "text": "We protect paint with film, correct paintwork, deep-clean interiors, and do soundproofing and wheel refinishing. All work happens in our studio: bright work bays, a separate wash bay and a client lounge."
+    },
+    "facts": {
+      "rating": "Google rating",
+      "reply": "We reply within",
+      "minutes": "{{value}} minutes",
+      "film": "Film warranty",
+      "work": "Installation warranty",
+      "filmValue": "{{min}}–{{max}} years",
+      "workValue": "{{value}} years"
+    },
+    "studio": {
+      "eyebrow": "Space",
+      "title": "How the studio is set up",
+      "lead": "A workspace prepared for detailing.",
+      "light": {
+        "title": "Linear lighting",
+        "text": "Light lines on the ceiling and walls reveal paint defects and help us check the result."
+      },
+      "bays": {
+        "title": "Separate bays",
+        "text": "Work areas are divided by glass partitions."
+      },
+      "wash": {
+        "title": "Wash bay",
+        "text": "Cars are washed and prepared in a separate bay at the entrance."
+      },
+      "lounge": {
+        "title": "Client lounge",
+        "text": "Wait for your car here or talk the job through with the manager."
+      }
+    },
+    "services": {
+      "eyebrow": "Services",
+      "title": "What we do",
+      "lead": "Every studio service with “from” prices."
+    },
+    "gallery": {
+      "eyebrow": "Photos",
+      "title": "Inside the studio"
+    },
+    "map": {
+      "eyebrow": "Address",
+      "title": "How to find us"
+    }
+  },
+  "faq": {
+    "topics": "Topics",
+    "groups": {
+      "general": "Booking and prices",
+      "ppf": "Paint protection film",
+      "polishing": "Polishing",
+      "interior": "Interior cleaning",
+      "sound": "Soundproofing",
+      "warranty": "Warranty"
+    },
+    "askTitle": "Didn’t find an answer?",
+    "askText": "Call or message us — we reply within {{minutes}} minutes."
+  },
+  "journal": {
+    "readMinutes": "{{n}} min read",
+    "relatedServices": "Related services",
+    "askTitle": "Any questions?",
+    "askText": "We’ll tell you what your car actually needs.",
+    "more": "More articles",
+    "fallbackLang": "The translation is on its way — for now the article is shown in Russian."
+  },
+  "legal": {
+    "updated": "Updated: {{date}}"
+  },
+  "lead": {
+    "name": "Name",
+    "namePh": "How should we address you",
+    "phone": "Phone",
+    "service": "Service",
+    "servicePh": "Choose a service",
+    "serviceUnknown": "Not sure yet — I need a consultation",
+    "consent": "I agree to the processing of my data. ",
+    "submit": "Call me back — 10% off",
+    "submitDiscount": "Lock in 10% off",
+    "sending": "Sending…",
+    "success": "Request sent, 10% off is noted. We will call you back within 15 minutes.",
+    "successDiscount": "The 10% discount is noted. We will call to confirm the service.",
+    "error": "It didn’t send. Call us or write on WhatsApp.",
+    "home": {
+      "eyebrow": "10% off",
+      "title": "Leave a callback request",
+      "lead": "Name, phone and the service. We reply within {{minutes}} minutes.",
+      "discount": "Leave a callback request and get 10% off. The exact price is given after inspection.",
+      "discountShort": "10% off for a callback request"
+    },
+    "popup": {
+      "eyebrow": "10% off",
+      "title": "Leave your number — we’ll hold the discount",
+      "lead": "We’ll call, confirm the service and lock in 10% off. The exact price is given after inspection."
+    }
+  }
+}
