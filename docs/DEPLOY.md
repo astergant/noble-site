@@ -9,7 +9,7 @@
 | `web` | **Cloudflare Pages** | Статика из prerender (`web/dist/web/browser`). Все страницы на трёх языках — готовый HTML |
 | Заявки | **Pages Function** `web/functions/api/lead.ts` → Google Таблица | VPS **не нужен**. Секреты — в Settings → Environment variables проекта Pages |
 | `api` | **VPS** (опционально) | Только если позже понадобится Telegram/SMTP дубль или свой сервер |
-| Домен | Регистратор → DNS в Cloudflare | `nobledetailing.com` → Pages |
+| Домен | Регистратор → DNS в Cloudflare | `nobledetailing.ge` → Pages |
 
 **Домен, Cloudflare и Google-таблица регистрируются на владельца бизнеса.** Разработчик получает доступ как участник, а не владелец.
 
@@ -28,7 +28,7 @@
    - или service account: `GOOGLE_SHEET_ID`, `GOOGLE_SHEET_TAB=Лист1`, `GOOGLE_CLIENT_EMAIL`, `GOOGLE_PRIVATE_KEY`.
    Таблица: `1uPXgis_qGkNgSZ0yWt5On_thZRUkHAXg0CUK7VbpyrY`, лист **Лист1**. Колонки A–I: «заявка с сайта», имя, (пустой UserName), телефон, язык сайта, дата регистрации, дата заявки, услуга, тип (`консультация` / `скидка 10%`).
 6. `npm run build:prod` после `ng build` запускает `tools/postbuild.mjs`: `sitemap.xml` (все языки, `hreflang`), `robots.txt` и `404.html` (копия `ka/404`).
-7. После первого деплоя: добавить `https://nobledetailing.com/sitemap.xml` в Google Search Console и Яндекс Вебмастер; проверить скорость в PageSpeed Insights (локальные замеры — см. README).
+7. После первого деплоя: добавить `https://nobledetailing.ge/sitemap.xml` в Google Search Console и Яндекс Вебмастер; проверить скорость в PageSpeed Insights (локальные замеры — см. README).
 
 Альтернатива: Node SSR на VPS (`node web/dist/web/server/server.mjs`, порт 4000). В этом режиме редирект по `Accept-Language` делает `web/src/server.ts`.
 

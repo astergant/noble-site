@@ -56,7 +56,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": ["nobledetailing.com", "www.nobledetailing.com", "localhost"]
+              "allowedHosts": ["nobledetailing.ge", "www.nobledetailing.ge", "localhost"]
             },
             "ssr": {
               "entry": "src/server.ts"

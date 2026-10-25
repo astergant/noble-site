@@ -24,7 +24,7 @@
 | 21 | Видео полировки: какой из трёх роликов — «до/после» и что в нём сравнивается? | Нейтральные подписи «Полировка заднего крыла…», «Полировка двери…», «Машинная обработка…» | `web/src/app/data/videos.json` → `title` |
 | 20 | Способы оплаты (наличные, карта, перевод, рассрочка?) | Не упоминаются ни в FAQ, ни в условиях | `faq.json` (группа `payment` можно вернуть в модель) |
 | 7 | E-mail для сайта и для заявок | Не показывается | `site.json` → `email`, `api/.env` → `MAIL_TO` |
-| 8 | Домен | `https://nobledetailing.com` | `site.json` → `siteUrl` |
+| 8 | Домен | `https://nobledetailing.ge` | `site.json` → `siteUrl` |
 | 9 | Условия гарантии (что покрывает, что нет) | Только сроки: плёнка 5–10 лет, работы по оклейке 3 года. Текст условий `TODO: юрист` | `site.json` → `warranty`, страница `/terms` |
 | 10 | Бренды материалов (плёнка, химия) | Не показываются, блок будет с заглушкой | `materials.json` (этап 4) |
 | 11 | Шаги процесса работы (5 шагов из ТЗ) | Будут показаны с пометкой `TODO` | этап 3 |
@@ -77,4 +77,4 @@
 - **Канонические адреса со слэшем** (`/ru/services/ppf-full/`): prerender создаёт папки с `index.html`, и Cloudflare Pages отдаёт их по адресу со слэшем. `canonical`, `hreflang`, JSON-LD и `sitemap.xml` используют один формат.
 - **sitemap.xml, robots.txt, 404.html** генерирует `tools/postbuild.mjs` по папкам prerender (входит в `npm run build:prod`).
 - **Манифест медиа остаётся в основном бандле** (~10 КБ до сжатия): его используют и загрузчик картинок, и компонент `MediaFrame` (размеры и blur-превью для каждого фото). Вынос усложнил бы код ради ~3 КБ gzip.
-- **SSR и allowedHosts**: Angular SSR пропускает только хосты из `angular.json` → `security.allowedHosts` (`nobledetailing.com`, `www.nobledetailing.com`, `localhost`). Для другого домена или превью задайте переменную окружения `NG_ALLOWED_HOSTS`, иначе сервер ответит 400.
+- **SSR и allowedHosts**: Angular SSR пропускает только хосты из `angular.json` → `security.allowedHosts` (`nobledetailing.ge`, `www.nobledetailing.ge`, `localhost`). Для другого домена или превью задайте переменную окружения `NG_ALLOWED_HOSTS`, иначе сервер ответит 400.

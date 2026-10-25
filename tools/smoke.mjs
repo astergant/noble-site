@@ -58,7 +58,7 @@ const hidden = (locator) =>
   check('title translated', (await page.title()).startsWith('Полировка'), await page.title());
   check(
     'canonical updated',
-    (await page.getAttribute('link[rel=canonical]', 'href')) === 'https://nobledetailing.com/ru/services/polishing/',
+    (await page.getAttribute('link[rel=canonical]', 'href')) === 'https://nobledetailing.ge/ru/services/polishing/',
   );
   const h1 = await page.locator('h1').innerText();
   check('h1 translated', h1.includes('Полировка'), h1);
