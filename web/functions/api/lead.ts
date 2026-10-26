@@ -25,7 +25,7 @@ function limited(ip: string): boolean {
     return false;
   }
   cur.n += 1;
-  return cur.n > 5;
+  return cur.n > 20;
 }
 
 export const onRequestPost = async ({
@@ -36,7 +36,6 @@ export const onRequestPost = async ({
   env: SheetsEnv;
 }): Promise<Response> => {
   const ip = request.headers.get('cf-connecting-ip') || 'unknown';
-  if (limited(ip)) return json({ ok: false, error: 'rate_limited' }, 429);
 
   let body: Record<string, unknown>;
   try {
@@ -73,6 +72,8 @@ export const onRequestPost = async ({
     });
     return json({ ok: false, error: 'delivery' }, 503);
   }
+
+  if (limited(ip)) return json({ ok: false, error: 'rate_limited' }, 429);
 
   try {
     await appendLead(env, { name, phone, lang, source, service: service || undefined });
