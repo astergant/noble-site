@@ -5,8 +5,30 @@ export interface SheetsEnv {
   GOOGLE_SHEET_TAB?: string;
   GOOGLE_CLIENT_EMAIL?: string;
   GOOGLE_PRIVATE_KEY?: string;
+  /** Full google-sa.json as one secret (easier than PEM in the dashboard). */
+  GOOGLE_SA_JSON?: string;
   GOOGLE_SHEETS_WEBHOOK?: string;
   GOOGLE_SHEETS_TOKEN?: string;
+}
+
+export function serviceAccount(env: SheetsEnv): { client_email: string; private_key: string } | null {
+  if (env.GOOGLE_SA_JSON) {
+    try {
+      const parsed = JSON.parse(env.GOOGLE_SA_JSON) as { client_email?: string; private_key?: string };
+      if (parsed.client_email && parsed.private_key) {
+        return { client_email: parsed.client_email, private_key: parsed.private_key };
+      }
+    } catch {
+      /* invalid JSON */
+    }
+  }
+  if (env.GOOGLE_CLIENT_EMAIL && env.GOOGLE_PRIVATE_KEY) {
+    return {
+      client_email: env.GOOGLE_CLIENT_EMAIL,
+      private_key: env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+    };
+  }
+  return null;
 }
 
 export interface SheetLead {
@@ -19,8 +41,7 @@ export interface SheetLead {
 
 export function sheetsEnabled(env: SheetsEnv): boolean {
   return Boolean(
-    (env.GOOGLE_SHEETS_WEBHOOK && env.GOOGLE_SHEETS_TOKEN) ||
-      (env.GOOGLE_SHEET_ID && env.GOOGLE_CLIENT_EMAIL && env.GOOGLE_PRIVATE_KEY),
+    (env.GOOGLE_SHEETS_WEBHOOK && env.GOOGLE_SHEETS_TOKEN) || (env.GOOGLE_SHEET_ID && serviceAccount(env)),
   );
 }
 
@@ -124,7 +145,9 @@ export async function appendLead(env: SheetsEnv, lead: SheetLead): Promise<void>
     if (!res.ok) throw new Error(`Sheets webhook ${res.status}`);
     return;
   }
-  const token = await googleAccessToken(env.GOOGLE_CLIENT_EMAIL!, env.GOOGLE_PRIVATE_KEY!);
+  const sa = serviceAccount(env);
+  if (!sa || !env.GOOGLE_SHEET_ID) throw new Error('Google Sheets is not configured');
+  const token = await googleAccessToken(sa.client_email, sa.private_key);
   const tab = env.GOOGLE_SHEET_TAB || 'Заявки';
   const range = encodeURIComponent(`${tab}!A:K`);
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${env.GOOGLE_SHEET_ID}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;

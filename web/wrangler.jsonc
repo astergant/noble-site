@@ -3,6 +3,10 @@
   "name": "noble-site",
   "main": "./worker.ts",
   "compatibility_date": "2026-10-25",
+  "vars": {
+    "GOOGLE_SHEET_ID": "1uPXgis_qGkNgSZ0yWt5On_thZRUkHAXg0CUK7VbpyrY",
+    "GOOGLE_SHEET_TAB": "Заявки",
+  },
   "assets": {
     "directory": "./dist/web/browser",
     "binding": "ASSETS",

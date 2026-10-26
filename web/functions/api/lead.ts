@@ -64,11 +64,20 @@ export const onRequestPost = async ({
     return json({ ok: false, error: 'validation' }, 400);
   }
 
-  if (!sheetsEnabled(env)) return json({ ok: false, error: 'delivery' }, 503);
+  if (!sheetsEnabled(env)) {
+    console.error('lead.sheets_missing', {
+      sheet: Boolean(env.GOOGLE_SHEET_ID),
+      email: Boolean(env.GOOGLE_CLIENT_EMAIL),
+      key: Boolean(env.GOOGLE_PRIVATE_KEY),
+      saJson: Boolean(env.GOOGLE_SA_JSON),
+    });
+    return json({ ok: false, error: 'delivery' }, 503);
+  }
 
   try {
     await appendLead(env, { name, phone, lang, source, service: service || undefined });
-  } catch {
+  } catch (err) {
+    console.error('lead.sheets_failed', String(err));
     return json({ ok: false, error: 'delivery' }, 502);
   }
   return json({ ok: true });
