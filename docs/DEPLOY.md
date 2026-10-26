@@ -18,9 +18,11 @@
 1. Перед продакшен-сборкой заменить все DEMO/TODO-данные: `npm --prefix web run check:demo` должен пройти.
 2. Pages → Create project → подключить репозиторий.
    - Root directory: `web`
-   - Build command: `npm ci && npm run build:prod`
+   - Build command: `npm ci && npm run build`
+   - Deploy command (Workers): `node cf-deploy.mjs`
    - Output directory: `dist/web/browser`
    - Переменная окружения `NODE_VERSION=24.19.0`
+   - Google: в **Builds** Secret `GOOGLE_SA_JSON` (весь google-sa.json). Скрипт деплоя копирует его в runtime.
 3. Редирект `/` по языку: Pages Function `web/functions/index.ts` читает `Accept-Language` и отвечает 302 на `/ka/`, `/ru/` или `/en/` (по умолчанию грузинский). Без функции срабатывает мета-редирект на `/ka` из prerender.
 4. `public/_redirects`: `/{lang}/book` → `/{lang}/contacts`; `/{lang}/works/*` → `/{lang}/works/`.
 5. Форма на главной и popup пишут в `POST /api/lead` (Pages Function). Секреты Google — в Pages → Settings → Environment variables (Production **и** Preview):

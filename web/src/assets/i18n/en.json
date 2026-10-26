@@ -420,7 +420,8 @@
     "success": "Request sent, 10% off is noted. We will call you back within two hours.",
     "successDiscount": "The 10% discount is noted. We will call you back within two hours.",
     "accepted": "Request accepted. Our specialists will contact you within two hours.",
-    "error": "It didn’t send. Call us or write on WhatsApp.",
+    "required": "Fill in your name, phone number and the data-processing consent.",
+    "error": "We couldn’t book you on the site. Please register via Telegram:",
     "home": {
       "eyebrow": "10% off",
       "title": "Leave a callback request",

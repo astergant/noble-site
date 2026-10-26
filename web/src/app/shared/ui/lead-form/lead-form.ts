@@ -2,15 +2,17 @@ import { ChangeDetectionStrategy, Component, inject, input, output, signal } fro
 import { RouterLink } from '@angular/router';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
+import { ContactService } from '../../../core/config/contact.service';
 import { ContentService } from '../../../core/data/content.service';
 import { LangService } from '../../../core/i18n/lang.service';
 import { LeadNoticeService } from './lead-notice.service';
 
 export type LeadSource = 'home' | 'popup_discount';
-type Status = 'idle' | 'sending' | 'ok' | 'error';
+type Status = 'idle' | 'sending' | 'ok' | 'error' | 'invalid';
 
 const field =
   'mt-1 h-10 w-full rounded-control border border-line bg-white px-3 text-sm text-ink outline-none transition-colors placeholder:text-subtle focus:border-night';
+const fieldBad = `${field} border-danger`;
 
 /**
  * Name, phone and service. Posts to /api/lead (proxied locally, Pages Function in production).
@@ -33,7 +35,7 @@ const field =
           minlength="2"
           maxlength="80"
           autocomplete="name"
-          [class]="field"
+          [class]="miss('name') ? fieldBad : field"
           [attr.placeholder]="'lead.namePh' | transloco"
         />
       </div>
@@ -46,7 +48,7 @@ const field =
           required
           inputmode="tel"
           autocomplete="tel"
-          [class]="field"
+          [class]="miss('phone') ? fieldBad : field"
           placeholder="+995 5XX XXX XXX"
         />
       </div>
@@ -63,7 +65,7 @@ const field =
       <label class="sr-only" aria-hidden="true">
         <input type="text" name="noble_hp" tabindex="-1" autocomplete="off" />
       </label>
-      <label class="flex items-start gap-3 text-sm text-muted">
+      <label class="flex items-start gap-3 text-sm" [class.text-danger]="miss('consent')" [class.text-muted]="!miss('consent')">
         <input type="checkbox" name="consent" required class="mt-1 size-4 accent-night" />
         <span>
           {{ 'lead.consent' | transloco }}
@@ -72,8 +74,22 @@ const field =
           }}</a>
         </span>
       </label>
+      @if (status() === 'invalid') {
+        <p class="text-sm text-danger" role="alert">{{ 'lead.required' | transloco }}</p>
+      }
       @if (status() === 'error') {
-        <p class="text-sm text-danger" role="alert">{{ 'lead.error' | transloco }}</p>
+        <p class="text-sm text-danger" role="alert">
+          {{ 'lead.error' | transloco }}
+          @if (contact.telegram) {
+            <a
+              [href]="contact.telegram"
+              target="_blank"
+              rel="noopener"
+              (click)="contact.track('telegram', 'lead_error')"
+              class="ml-1 underline underline-offset-4"
+            >{{ 'contact.viaBot' | transloco }}</a>
+          }
+        </p>
       }
       @if (status() === 'ok') {
         <p class="rounded-control bg-success-50 px-4 py-3 text-sm text-success" role="status">{{ successKey() | transloco }}</p>
@@ -94,11 +110,18 @@ export class LeadForm {
   readonly sent = output<void>();
 
   protected readonly langs = inject(LangService);
+  protected readonly contact = inject(ContactService);
   private readonly analytics = inject(AnalyticsService);
   private readonly notice = inject(LeadNoticeService);
   protected readonly services = inject(ContentService).services;
   protected readonly field = field;
+  protected readonly fieldBad = fieldBad;
   protected readonly status = signal<Status>('idle');
+  protected readonly missing = signal<Set<string>>(new Set());
+
+  protected miss(key: string): boolean {
+    return this.missing().has(key);
+  }
 
   protected submitKey(): string {
     return this.source() === 'popup_discount' ? 'lead.submitDiscount' : 'lead.submit';
@@ -118,10 +141,22 @@ export class LeadForm {
       queueMicrotask(() => this.notice.show());
       return;
     }
+    const name = String(data.get('name') ?? '').trim();
+    const phone = String(data.get('phone') ?? '').trim();
+    const consent = data.get('consent') === 'on';
+    const miss = new Set<string>();
+    if (name.length < 2) miss.add('name');
+    if (phone.replace(/\D/g, '').length < 8) miss.add('phone');
+    if (!consent) miss.add('consent');
+    this.missing.set(miss);
+    if (miss.size) {
+      this.status.set('invalid');
+      return;
+    }
     this.status.set('sending');
     const payload = {
-      name: String(data.get('name') ?? '').trim(),
-      phone: String(data.get('phone') ?? '').trim(),
+      name,
+      phone,
       service: (() => {
         const v = String(data.get('service') ?? '').trim();
         return !v || v === '_none' ? undefined : v;
