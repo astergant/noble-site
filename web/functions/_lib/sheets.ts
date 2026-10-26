@@ -38,10 +38,21 @@ function tbilisiStamp(date = new Date()): string {
     .replace(',', '');
 }
 
+/** Sheet «Заявки»: A datetime, B name, C phone, D–G empty, H service, I–J empty, K status. */
 export function sheetRow(lead: SheetLead, at = new Date()): string[] {
-  const stamp = tbilisiStamp(at);
-  const kind = lead.source === 'popup_discount' ? 'скидка 10%' : 'консультация';
-  return ['заявка с сайта', lead.name, '', lead.phone, lead.lang, stamp, stamp, lead.service ?? '', kind];
+  return [
+    tbilisiStamp(at),
+    lead.name,
+    lead.phone,
+    '',
+    '',
+    '',
+    '',
+    lead.service ?? '',
+    '',
+    '',
+    'Новая',
+  ];
 }
 
 function pemToDer(pem: string): ArrayBuffer {
@@ -114,8 +125,8 @@ export async function appendLead(env: SheetsEnv, lead: SheetLead): Promise<void>
     return;
   }
   const token = await googleAccessToken(env.GOOGLE_CLIENT_EMAIL!, env.GOOGLE_PRIVATE_KEY!);
-  const tab = env.GOOGLE_SHEET_TAB || 'Лист1';
-  const range = encodeURIComponent(`${tab}!A:I`);
+  const tab = env.GOOGLE_SHEET_TAB || 'Заявки';
+  const range = encodeURIComponent(`${tab}!A:K`);
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${env.GOOGLE_SHEET_ID}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
   const res = await fetch(url, {
     method: 'POST',

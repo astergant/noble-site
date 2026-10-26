@@ -34,7 +34,11 @@ export function localBusinessLd(site: SiteConfig, lang: Lang): Record<string, un
       reviewCount: site.rating.google.count,
       bestRating: 5,
     },
-    sameAs: [site.instagram ? `https://www.instagram.com/${site.instagram}/` : null, site.maps.google].filter(Boolean),
+    sameAs: [
+      site.instagram ? `https://www.instagram.com/${site.instagram}/` : null,
+      site.telegram ? `https://t.me/${site.telegram.replace(/^@/, '')}` : null,
+      site.maps.google,
+    ].filter(Boolean),
   };
 }
 

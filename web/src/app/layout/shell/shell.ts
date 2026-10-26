@@ -5,11 +5,11 @@ import { CookieBanner } from '../cookie-banner/cookie-banner';
 import { FloatingContacts } from '../floating-contacts/floating-contacts';
 import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
-import { LeadPopup } from '../lead-popup/lead-popup';
+import { LeadNotice } from '../../shared/ui/lead-form/lead-notice';
 
 @Component({
   selector: 'app-shell',
-  imports: [RouterOutlet, TranslocoPipe, Header, Footer, FloatingContacts, CookieBanner, LeadPopup],
+  imports: [RouterOutlet, TranslocoPipe, Header, Footer, FloatingContacts, CookieBanner, LeadNotice],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'flex min-h-dvh flex-col pb-[calc(3.5rem+env(safe-area-inset-bottom))] md:pb-0' },
   template: `
@@ -21,7 +21,7 @@ import { LeadPopup } from '../lead-popup/lead-popup';
     <footer app-footer></footer>
     <app-floating-contacts />
     <app-cookie-banner />
-    <app-lead-popup />
+    <app-lead-notice />
   `,
 })
 export class Shell {}

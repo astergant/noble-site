@@ -63,7 +63,7 @@ npx lighthouse@12 http://localhost:4000/ru/ --chrome-path="C:\Program Files (x86
 | Фото: alt на 3 языках, точка фокуса | `web/src/assets/media/manifest.json`, затем `python tools/optimize-media.py D:/nobel/brend` (нужны `pip install pillow pillow-heif`) |
 | Видео (подпись на 3 языках, к какой услуге) | `web/src/app/data/videos.json`, затем `python tools/optimize-video.py D:/nobel/brend` (нужен `pip install imageio-ffmpeg`) |
 | Включить/выключить формы заявок | `site.json` → `features.leadForm` |
-| Куда пишутся заявки | Google Таблица Лист1 через `POST /api/lead`; секреты в `api/.env` / Cloudflare Pages |
+| Куда пишутся заявки | Google Таблица, лист «Заявки», через `POST /api/lead`; секреты в `api/.env` / Cloudflare Pages |
 | Карта (виджет Яндекса, ссылки Google/Яндекс) | `site.json` → `maps` |
 | Тексты интерфейса | `web/src/assets/i18n/{ka,ru,en}.json` |
 | Цвета, шрифты, радиусы, тени | `web/src/styles.css` (`@theme`) |

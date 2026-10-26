@@ -21,5 +21,6 @@ export function instagramHref(c: SiteConfig): string | null {
 }
 
 export function telegramHref(c: SiteConfig): string | null {
-  return c.features.telegram && c.telegram ? `https://t.me/${c.telegram}` : null;
+  if (!c.telegram) return null;
+  return `https://t.me/${c.telegram.replace(/^@/, '')}`;
 }

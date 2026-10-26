@@ -3,6 +3,7 @@
     "call": "Call",
     "whatsapp": "WhatsApp",
     "writeWhatsapp": "Message on WhatsApp",
+    "writeTelegram": "Book via Telegram",
     "instagram": "Instagram",
     "telegram": "Telegram",
     "menu": "Menu",
@@ -66,7 +67,12 @@
     "callAria": "Call {{phone}}",
     "whatsappAria": "Message us on WhatsApp",
     "instagramAria": "Noble Detailing on Instagram",
-    "floatingAria": "Quick contact"
+    "telegramAria": "Book via Telegram bot",
+    "floatingAria": "Quick contact",
+    "reach": "Get in touch",
+    "chooserTitle": "How to reach us",
+    "viaSite": "Request on the site",
+    "viaBot": "Telegram bot"
   },
   "categories": {
     "protection": "PPF film",
@@ -411,8 +417,9 @@
     "submit": "Call me back — 10% off",
     "submitDiscount": "Lock in 10% off",
     "sending": "Sending…",
-    "success": "Request sent, 10% off is noted. We will call you back within 15 minutes.",
-    "successDiscount": "The 10% discount is noted. We will call to confirm the service.",
+    "success": "Request sent, 10% off is noted. We will call you back within two hours.",
+    "successDiscount": "The 10% discount is noted. We will call you back within two hours.",
+    "accepted": "Request accepted. Our specialists will contact you within two hours.",
     "error": "It didn’t send. Call us or write on WhatsApp.",
     "home": {
       "eyebrow": "10% off",

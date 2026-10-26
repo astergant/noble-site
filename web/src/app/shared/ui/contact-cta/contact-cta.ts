@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { TranslocoPipe } from '@jsverse/transloco';
 import { SITE } from '../../../core/config/site.config';
-import { ContactButtons } from '../contact-buttons/contact-buttons';
+import { ContactChooser } from '../contact-chooser/contact-chooser';
 
 /** Closing call-to-action band, placed right before the footer. */
 @Component({
   selector: 'app-contact-cta',
-  imports: [TranslocoPipe, ContactButtons],
+  imports: [TranslocoPipe, ContactChooser],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'on-dark relative block overflow-hidden bg-night text-white' },
   template: `
@@ -26,7 +26,9 @@ import { ContactButtons } from '../contact-buttons/contact-buttons';
         </p>
         <p class="mt-3 text-sm text-white/75">{{ 'common.exactPrice' | transloco }}</p>
       </div>
-      <app-contact-buttons [placement]="placement()" class="md:justify-end" />
+      <div class="md:justify-self-end">
+        <app-contact-chooser [placement]="placement()" />
+      </div>
     </div>
   `,
 })

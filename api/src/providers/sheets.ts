@@ -49,20 +49,23 @@ function tbilisiStamp(date = new Date()): string {
     .replace(',', '');
 }
 
-/** Columns A–I on Лист1. */
+/**
+ * Sheet «Заявки»: A дата/время, B имя, C телефон, D–G пусто (авто),
+ * H услуги, I бюджет пусто, J Telegram ID пусто, K статус.
+ */
 export function sheetRow(lead: Lead, at: Date): string[] {
-  const stamp = tbilisiStamp(at);
-  const kind = lead.source === 'popup_discount' ? 'скидка 10%' : 'консультация';
   return [
-    'заявка с сайта',
+    tbilisiStamp(at),
     lead.name,
-    '',
     lead.phone,
-    lead.lang,
-    stamp,
-    stamp,
+    '',
+    '',
+    '',
+    '',
     lead.service ?? '',
-    kind,
+    '',
+    '',
+    'Новая',
   ];
 }
 
@@ -78,7 +81,7 @@ async function appendViaApi(config: Config, row: string[]): Promise<void> {
   const token = creds.access_token;
   if (!token) throw new Error('Google token missing');
   const tab = config.GOOGLE_SHEET_TAB;
-  const range = encodeURIComponent(`${tab}!A:I`);
+  const range = encodeURIComponent(`${tab}!A:K`);
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${config.GOOGLE_SHEET_ID}/values/${range}:append?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
   let last: unknown;
   for (let i = 0; i < 2; i++) {
@@ -101,7 +104,7 @@ async function appendViaApi(config: Config, row: string[]): Promise<void> {
   throw last instanceof Error ? last : new Error(String(last));
 }
 
-/** Appends a lead as a new row on Лист1. Does not store personal data on this server. */
+/** Appends a lead as a new row on «Заявки». Does not store personal data on this server. */
 export class SheetsLeadRepository implements LeadRepository {
   constructor(private readonly config: Config) {}
 

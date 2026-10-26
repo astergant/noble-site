@@ -5,7 +5,7 @@
   "phoneDisplay": "+995 510 100 999",
   "whatsapp": "995510100999",
   "instagram": "nobledetailing.ge",
-  "telegram": null,
+  "telegram": "NobleDeteiling_bot",
   "email": null,
   "address": {
     "ka": "ვასო გოძიაშვილის I შესახვევი 6, თბილისი",
@@ -61,7 +61,7 @@
   "analytics": { "ga4": "", "metaPixel": "", "gtm": "" },
   "features": {
     "leadForm": true,
-    "telegram": false,
+    "telegram": true,
     "cursorRing": false,
     "smoothScroll": false
   }

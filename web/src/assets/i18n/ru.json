@@ -3,6 +3,7 @@
     "call": "Позвонить",
     "whatsapp": "WhatsApp",
     "writeWhatsapp": "Написать в WhatsApp",
+    "writeTelegram": "Записаться в Telegram",
     "instagram": "Instagram",
     "telegram": "Telegram",
     "menu": "Меню",
@@ -66,7 +67,12 @@
     "callAria": "Позвонить: {{phone}}",
     "whatsappAria": "Написать в WhatsApp",
     "instagramAria": "Noble Detailing в Instagram",
-    "floatingAria": "Быстрая связь"
+    "telegramAria": "Записаться через Telegram-бот",
+    "floatingAria": "Быстрая связь",
+    "reach": "Обратиться",
+    "chooserTitle": "Как с нами связаться",
+    "viaSite": "Заявка на сайте",
+    "viaBot": "Telegram-бот"
   },
   "categories": {
     "protection": "Плёнка PPF",
@@ -411,8 +417,9 @@
     "submit": "Жду звонка — скидка 10%",
     "submitDiscount": "Зафиксировать скидку 10%",
     "sending": "Отправляем…",
-    "success": "Заявка отправлена, скидка 10% зафиксирована. Перезвоним в течение 15 минут.",
-    "successDiscount": "Скидка 10% зафиксирована. Перезвоним, чтобы подтвердить услугу.",
+    "success": "Заявка отправлена, скидка 10% зафиксирована. Перезвоним в течение двух часов.",
+    "successDiscount": "Скидка 10% зафиксирована. Перезвоним в течение двух часов.",
+    "accepted": "Заявка принята. Наши специалисты свяжутся с вами в течение двух часов.",
     "error": "Не отправилось. Позвоните нам или напишите в WhatsApp.",
     "home": {
       "eyebrow": "Скидка 10%",

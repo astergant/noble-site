@@ -44,6 +44,18 @@
         <app-icon name="whatsapp" [size]="18" />
       </a>
     }
+    @if (contact.telegram) {
+      <a
+        [href]="contact.telegram"
+        target="_blank"
+        rel="noopener"
+        (click)="contact.track('telegram', 'header')"
+        class="hidden size-11 items-center justify-center rounded-full border border-line-dark text-white/85 transition-colors hover:border-sand hover:text-sand md:inline-flex"
+        [attr.aria-label]="'contact.telegramAria' | transloco"
+      >
+        <app-icon name="telegram" [size]="18" />
+      </a>
+    }
 
     <a
       [href]="contact.tel"
@@ -135,6 +147,18 @@
             >
               <app-icon name="whatsapp" [size]="18" />
               {{ 'common.whatsapp' | transloco }}
+            </a>
+          }
+          @if (contact.telegram) {
+            <a
+              [href]="contact.telegram"
+              target="_blank"
+              rel="noopener"
+              (click)="contact.track('telegram', 'menu')"
+              class="inline-flex h-12 items-center gap-2 rounded-full border border-sand/50 px-6 text-sand"
+            >
+              <app-icon name="telegram" [size]="18" />
+              {{ 'contact.viaBot' | transloco }}
             </a>
           }
           @if (contact.instagram) {

@@ -25,8 +25,8 @@
 4. `public/_redirects`: `/{lang}/book` → `/{lang}/contacts`; `/{lang}/works/*` → `/{lang}/works/`.
 5. Форма на главной и popup пишут в `POST /api/lead` (Pages Function). Секреты Google — в Pages → Settings → Environment variables (Production **и** Preview):
    - простой путь: `GOOGLE_SHEETS_WEBHOOK` + `GOOGLE_SHEETS_TOKEN` (скрипт `tools/google-sheets-webhook.gs` в таблице);
-   - или service account: `GOOGLE_SHEET_ID`, `GOOGLE_SHEET_TAB=Лист1`, `GOOGLE_CLIENT_EMAIL`, `GOOGLE_PRIVATE_KEY`.
-   Таблица: `1uPXgis_qGkNgSZ0yWt5On_thZRUkHAXg0CUK7VbpyrY`, лист **Лист1**. Колонки A–I: «заявка с сайта», имя, (пустой UserName), телефон, язык сайта, дата регистрации, дата заявки, услуга, тип (`консультация` / `скидка 10%`).
+   - или service account: `GOOGLE_SHEET_ID`, `GOOGLE_SHEET_TAB=Заявки`, `GOOGLE_CLIENT_EMAIL`, `GOOGLE_PRIVATE_KEY`.
+   Таблица: `1uPXgis_qGkNgSZ0yWt5On_thZRUkHAXg0CUK7VbpyrY`, лист **Заявки**. Колонки: A дата/время (Тбилиси), B имя, C телефон, D–G пусто, H услуга, I–J пусто, K «Новая». Остальные поля таблицы не трогаем.
 6. `npm run build:prod` после `ng build` запускает `tools/postbuild.mjs`: `sitemap.xml` (все языки, `hreflang`), `robots.txt` и `404.html` (копия `ka/404`).
 7. После первого деплоя: добавить `https://nobledetailing.ge/sitemap.xml` в Google Search Console и Яндекс Вебмастер; проверить скорость в PageSpeed Insights (локальные замеры — см. README).
 

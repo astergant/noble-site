@@ -4,12 +4,13 @@ import { TranslocoPipe } from '@jsverse/transloco';
 import { AnalyticsService } from '../../../core/analytics/analytics.service';
 import { ContentService } from '../../../core/data/content.service';
 import { LangService } from '../../../core/i18n/lang.service';
+import { LeadNoticeService } from './lead-notice.service';
 
 export type LeadSource = 'home' | 'popup_discount';
 type Status = 'idle' | 'sending' | 'ok' | 'error';
 
 const field =
-  'mt-1.5 h-12 w-full rounded-control border border-line bg-white px-4 text-ink outline-none transition-colors placeholder:text-subtle focus:border-night';
+  'mt-1 h-10 w-full rounded-control border border-line bg-white px-3 text-sm text-ink outline-none transition-colors placeholder:text-subtle focus:border-night';
 
 /**
  * Name, phone and service. Posts to /api/lead (proxied locally, Pages Function in production).
@@ -21,7 +22,7 @@ const field =
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'block' },
   template: `
-    <form (submit)="onSubmit($event)" novalidate class="grid gap-4">
+    <form (submit)="onSubmit($event)" novalidate class="grid gap-3">
       <div>
         <label class="text-sm text-muted" for="lead-name-{{ source() }}">{{ 'lead.name' | transloco }}</label>
         <input
@@ -79,7 +80,7 @@ const field =
       } @else {
         <button
           type="submit"
-          class="inline-flex h-12 items-center justify-center rounded-full bg-night px-6 font-display font-semibold text-white transition-colors hover:bg-night-800 disabled:opacity-60"
+          class="inline-flex h-11 items-center justify-center rounded-full bg-night px-6 font-display font-semibold text-white transition-colors hover:bg-night-800 disabled:opacity-60"
           [disabled]="status() === 'sending'"
         >
           {{ (status() === 'sending' ? 'lead.sending' : submitKey()) | transloco }}
@@ -94,6 +95,7 @@ export class LeadForm {
 
   protected readonly langs = inject(LangService);
   private readonly analytics = inject(AnalyticsService);
+  private readonly notice = inject(LeadNoticeService);
   protected readonly services = inject(ContentService).services;
   protected readonly field = field;
   protected readonly status = signal<Status>('idle');
@@ -113,6 +115,7 @@ export class LeadForm {
     const data = new FormData(form);
     if (String(data.get('noble_hp') ?? '')) {
       this.status.set('ok');
+      queueMicrotask(() => this.notice.show());
       return;
     }
     this.status.set('sending');
@@ -144,6 +147,7 @@ export class LeadForm {
         /* convenience only */
       }
       this.sent.emit();
+      queueMicrotask(() => this.notice.show());
     } catch {
       this.status.set('error');
       this.analytics.track('lead_submit_error', { source: this.source() });

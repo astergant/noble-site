@@ -3,6 +3,7 @@
     "call": "დარეკვა",
     "whatsapp": "WhatsApp",
     "writeWhatsapp": "მოგვწერეთ WhatsApp-ში",
+    "writeTelegram": "ჩაწერა Telegram-ში",
     "instagram": "Instagram",
     "telegram": "Telegram",
     "menu": "მენიუ",
@@ -66,7 +67,12 @@
     "callAria": "დარეკვა: {{phone}}",
     "whatsappAria": "მოგვწერეთ WhatsApp-ში",
     "instagramAria": "Noble Detailing Instagram-ზე",
-    "floatingAria": "სწრაფი კავშირი"
+    "telegramAria": "ჩაწერა Telegram-ბოტით",
+    "floatingAria": "სწრაფი კავშირი",
+    "reach": "მოგვმართეთ",
+    "chooserTitle": "როგორ დაგვიკავშირდეთ",
+    "viaSite": "განაცხადი საიტზე",
+    "viaBot": "Telegram-ბოტი"
   },
   "categories": {
     "protection": "PPF ფირი",
@@ -411,8 +417,9 @@
     "submit": "დამირეკეთ — 10% ფასდაკლება",
     "submitDiscount": "10% ფასდაკლების დაფიქსირება",
     "sending": "იგზავნება…",
-    "success": "განაცხადი გაიგზავნა, 10% ფასდაკლება დაფიქსირებულია. გადმოგირეკავთ 15 წუთში.",
-    "successDiscount": "10% ფასდაკლება დაფიქსირებულია. გადმოგირეკავთ მომსახურების დასადასტურებლად.",
+    "success": "განაცხადი გაიგზავნა, 10% ფასდაკლება დაფიქსირებულია. გადმოგირეკავთ ორ საათში.",
+    "successDiscount": "10% ფასდაკლება დაფიქსირებულია. გადმოგირეკავთ ორ საათში.",
+    "accepted": "განაცხადი მიღებულია. ჩვენი სპეციალისტები დაგიკავშირდებიან ორ საათში.",
     "error": "არ გაიგზავნა. დაგვირეკეთ ან მოგვწერეთ WhatsApp-ზე.",
     "home": {
       "eyebrow": "10% ფასდაკლება",

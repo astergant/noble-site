@@ -12,7 +12,7 @@ import { Icon } from '../../shared/ui/icon/icon';
   template: `
     <nav
       [attr.aria-label]="'contact.floatingAria' | transloco"
-      class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-3 border-t border-line-dark bg-night-950/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md [view-transition-name:contact-bar] md:hidden"
+      class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-4 border-t border-line-dark bg-night-950/95 pb-[env(safe-area-inset-bottom)] backdrop-blur-md [view-transition-name:contact-bar] md:hidden"
     >
       <a
         [href]="contact.tel"
@@ -32,6 +32,18 @@ import { Icon } from '../../shared/ui/icon/icon';
         >
           <app-icon name="whatsapp" [size]="20" />
           WhatsApp
+        </a>
+      }
+      @if (contact.telegram) {
+        <a
+          [href]="contact.telegram"
+          target="_blank"
+          rel="noopener"
+          (click)="contact.track('telegram', 'bottom_bar')"
+          class="flex min-h-14 flex-col items-center justify-center gap-1 border-l border-line-dark text-xs text-white/85"
+        >
+          <app-icon name="telegram" [size]="20" />
+          Telegram
         </a>
       }
       @if (contact.instagram) {
@@ -59,6 +71,18 @@ import { Icon } from '../../shared/ui/icon/icon';
           [attr.aria-label]="'contact.whatsappAria' | transloco"
         >
           <app-icon name="whatsapp" [size]="22" />
+        </a>
+      }
+      @if (contact.telegram) {
+        <a
+          [href]="contact.telegram"
+          target="_blank"
+          rel="noopener"
+          (click)="contact.track('telegram', 'floating')"
+          class="fab"
+          [attr.aria-label]="'contact.telegramAria' | transloco"
+        >
+          <app-icon name="telegram" [size]="20" />
         </a>
       }
       @if (contact.instagram) {

@@ -31,7 +31,7 @@ const EnvSchema = z.object({
   MAIL_TO: optional,
   TURNSTILE_SECRET: optional,
   GOOGLE_SHEET_ID: optional,
-  GOOGLE_SHEET_TAB: z.string().default('Лист1'),
+  GOOGLE_SHEET_TAB: z.string().default('Заявки'),
   GOOGLE_CLIENT_EMAIL: optional,
   GOOGLE_PRIVATE_KEY: optional,
   GOOGLE_SHEETS_WEBHOOK: optional,

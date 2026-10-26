@@ -47,6 +47,17 @@ import { StatusChip } from '../status-chip/status-chip';
                 <app-icon name="whatsapp" [size]="16" /> WhatsApp
               </a>
             }
+            @if (contact.telegram) {
+              <a
+                [href]="contact.telegram"
+                target="_blank"
+                rel="noopener"
+                (click)="contact.track('telegram', placement())"
+                class="inline-flex h-10 items-center gap-2 rounded-full border border-night/25 px-4 text-night transition-colors hover:bg-night-50"
+              >
+                <app-icon name="telegram" [size]="16" /> {{ 'contact.viaBot' | transloco }}
+              </a>
+            }
             @if (contact.instagram) {
               <a
                 [href]="contact.instagram"

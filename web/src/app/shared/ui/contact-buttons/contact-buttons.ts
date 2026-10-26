@@ -44,7 +44,7 @@ import { Icon } from '../icon/icon';
         (click)="contact.track('telegram', placement())"
         [class]="btn() + ' ' + secondary()"
       >
-        <app-icon name="telegram" [size]="18" /> Telegram
+        <app-icon name="telegram" [size]="18" /> {{ 'contact.viaBot' | transloco }}
       </a>
     }
   `,
